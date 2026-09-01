@@ -1,54 +1,147 @@
-# manicomio-tattoo-web
+# El Manicomio Tattoo
 
-This template should help get you started developing with Vue 3 in Vite.
+Sitio web oficial de **El Manicomio Tattoo**, desarrollado con Vue 3 y Vite.
 
-## Recommended IDE Setup
+Este repositorio contiene el código fuente, configuración, recursos y demás materiales utilizados para el desarrollo y funcionamiento del sitio web de El Manicomio Tattoo.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+## 🔒 Licencia y derechos de uso
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+**Este proyecto es software propietario y NO es Open Source.**
 
-## Type Support for `.vue` Imports in TS
+Copyright © 2026 **Denis Carlos Cabrera**
+Todos los derechos reservados.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+Aunque este repositorio sea públicamente visible en GitHub, su contenido **no está disponible para uso, copia, modificación, distribución, publicación, comercialización o reutilización por terceros**.
 
-## Customize configuration
+El código y los materiales de este repositorio están destinados exclusivamente a:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- **Denis Carlos Cabrera**, titular de los derechos sobre el código.
+- **El propietario o responsable legal de El Manicomio Tattoo**, para la operación, mantenimiento y desarrollo de su sitio web.
 
-## Project Setup
+Cualquier otra persona o entidad que desee utilizar, copiar, modificar, distribuir, publicar, desplegar o reutilizar cualquier parte de este proyecto deberá obtener **autorización previa y por escrito**.
+
+La disponibilidad pública del repositorio **no constituye una licencia de uso** ni concede derechos sobre el código fuente, diseños, recursos o cualquier otro material protegido.
+
+Consulta el archivo [`LICENSE`](./LICENSE) para conocer los términos completos de uso.
+
+### Contacto
+
+Para solicitar autorización de uso o cualquier otra cuestión relacionada con los derechos del proyecto:
+
+**Denis Carlos Cabrera**
+📧 [deniscarloscabrera@outlook.es](mailto:deniscarloscabrera@outlook.es)
+
+---
+
+## 🛠️ Tecnologías
+
+Este proyecto utiliza principalmente:
+
+- [Vue 3](https://vuejs.org/)
+- [Vite](https://vite.dev/)
+- TypeScript
+- pnpm
+- Vitest
+- ESLint
+
+---
+
+## 💻 Configuración del proyecto
+
+### Requisitos
+
+Se recomienda tener instalado:
+
+- Node.js
+- pnpm
+
+### Instalación
+
+Clona el repositorio y ejecuta:
 
 ```sh
 pnpm install
 ```
 
-### Compile and Hot-Reload for Development
+### Desarrollo
+
+Para iniciar el servidor de desarrollo con recarga automática:
 
 ```sh
 pnpm dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### Compilación para producción
+
+Para realizar el type-check, compilar y minificar el proyecto:
 
 ```sh
 pnpm build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Tests unitarios
+
+Para ejecutar los tests con Vitest:
 
 ```sh
 pnpm test:unit
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### Linter
+
+Para comprobar el código mediante ESLint:
 
 ```sh
 pnpm lint
 ```
+
+---
+
+## 🧩 Configuración del editor
+
+Se recomienda utilizar [Visual Studio Code](https://code.visualstudio.com/) junto con la extensión oficial de Vue:
+
+[Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+
+Si tienes instalada la extensión Vetur, se recomienda desactivarla para este proyecto.
+
+---
+
+## 🌐 Herramientas de desarrollo
+
+Para trabajar con Vue 3 se recomienda utilizar las herramientas oficiales de desarrollo de Vue:
+
+- [Vue.js Devtools para Chromium](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+- [Vue.js Devtools para Firefox](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
+
+---
+
+## 📄 TypeScript y archivos `.vue`
+
+TypeScript no gestiona directamente la información de tipos de los archivos `.vue`. Por este motivo, el proyecto utiliza `vue-tsc` para realizar las comprobaciones de tipos.
+
+La extensión **Vue (Official)** proporciona soporte para el lenguaje y permite que el servicio de TypeScript reconozca correctamente los tipos utilizados en los componentes `.vue`.
+
+---
+
+## ⚙️ Configuración de Vite
+
+Para obtener información sobre la configuración de Vite, consulta la documentación oficial:
+
+[Vite Configuration Reference](https://vite.dev/config/)
+
+---
+
+## ⚠️ Aviso
+
+Este repositorio está publicado de forma pública únicamente por decisión del titular de los derechos.
+
+**Publicar el código en GitHub no significa que el código sea libre para su utilización.**
+
+No está permitido utilizar este proyecto como plantilla, base para otros proyectos, material educativo, proyecto comercial o personal, ni redistribuirlo sin autorización previa y por escrito del titular.
+
+---
+
+**© 2026 Denis Carlos Cabrera — El Manicomio Tattoo. All rights reserved.**
