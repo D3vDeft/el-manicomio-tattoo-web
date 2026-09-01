@@ -1,166 +1,191 @@
 {
-    "home":{
-        "section-name" : "Inicio",
-        "title" : "Tatuajes con personalidad.",
-        "subtitle" : "Diseñados para ti.",
-        "description-start" : "En",
-        "description-end" : "convertimos ideas, historias y emociones en piezas que llevas contigo para siempre.",
-        "about-start" : "Somos un",
-        "about-black": "estudio de tatuajes y piercings en Madrid",
-        "about-end" : "situado en Chamberí, donde cada proyecto comienza escuchando lo que quieres contar y termina creando algo completamente tuyo.",
-        "about-studio-start": "Trabajamos diferentes estilos de tatuaje, desde",
-        "about-studio-black": "realismo y blackwork",
-        "about-studio-end": "hasta color, lettering y diseños personalizados. Nuestro objetivo no es simplemente hacer un tatuaje, sino crear una pieza que tenga sentido para ti.",
-        "contact-init" : "Cuéntanos tu idea",
-        "portfolio": {
-            "section-name" : "Portafolio",
-            "title" : "Nuestro trabajo",
-            "description" : "Cada piel es un lienzo diferente. Descubre algunos de los trabajos realizados por nuestros artistas."
-        },
-        "reviews": {
-            "section-name" : "Experiencias",
-            "title" : "Lo dicen nuestros clientes",
-            "description" : "Más de 400 reseñas en Google",
-            "button" : "Ver opiniones"
-        },
-        "location": {
-            "section-name" : "Encuéntranos",
-            "title" : "Ven a visitarnos",
-            "description" : "Estamos en el corazón de Chamberí, Madrid. Si tienes una idea en mente, pásate por el estudio y hablamos sobre tu próximo tatuaje.",
-            "button" : "Cómo llegar"
-        }
+  "home": {
+    "section-name": "Inicio",
+    "title": "Tatuajes con personalidad.",
+    "subtitle": "Diseñados para ti.",
+    "description-start": "En",
+    "description-end": "convertimos ideas, historias y emociones en piezas que llevas contigo para siempre.",
+    "about-start": "Somos un",
+    "about-black": "estudio de tatuajes y piercings en Madrid",
+    "about-end": "situado en Chamberí, donde cada proyecto comienza escuchando lo que quieres contar y termina creando algo completamente tuyo.",
+    "about-studio-start": "Trabajamos diferentes estilos de tatuaje, desde",
+    "about-studio-black": "realismo y blackwork",
+    "about-studio-end": "hasta color, lettering y diseños personalizados. Nuestro objetivo no es simplemente hacer un tatuaje, sino crear una pieza que tenga sentido para ti.",
+    "contact-init": "Cuéntanos tu idea",
+    "portfolio": {
+      "section-name": "Portafolio",
+      "title": "Nuestro trabajo",
+      "description": "Cada piel es un lienzo diferente. Descubre algunos de los trabajos realizados por nuestros artistas."
     },
-    "tattoos":{
-        "section-name" : "Tatuajes",
-        "title" : "Seccion de tatuajes"
+    "reviews": {
+      "section-name": "Experiencias",
+      "title": "Lo dicen nuestros clientes",
+      "description": "Más de 400 reseñas en Google",
+      "button": "Ver opiniones"
     },
-    "piercings": {
-        "section-name" : "Piercings",
-        "title" : "Seccion de piercins"
-    },
-    "jewelers": {
-        "section-name" : "Joyería",
-        "title" : "Seccion de joyería"
-    },
-    "tooth-gems": {
-        "section-name" : "Gemas Dentales",
-        "title" : "Seccion de Gemas Dentales"
-    },
-    "self-care":{
-        "section-name" : "Cuidados",
-        "title" : "Seccion de cuidados"
-    },
-    "contact":{
-        "section-name" : "Contacto",
-        "title" : "Seccion de Contacto"
-    },
-    "promo":{
-        "section-name" : "Promo",
-        "title" : "Seccion de promociones"
-    },
-    "footer": {
-        "legal" : "Legal",
-        "copyright" : "Todos los derechos reservados © 2026 El Manicomio Tattoo",
-        "cookie-policy" : "Política de Cookies",
-        "privacy-policy" : "Política de Privacidad",
-        "legal-notice" : "Aviso Legal",
-        "contact" : "Contacto",
-        "social-media" : "Síguenos en las redes sociales"
-    },
-    "cookies-policy": {
-        "title": "Política de Cookies",
-        "description": "Nuestro sitio web https://www.elmanicomiotattoo.com/ (el “Sitio Web”) utiliza una tecnología denominada “cookies” con la finalidad de poder recabar información acerca del uso del Sitio Web. Le informamos de que podemos utilizar cookies con la finalidad de facilitar su navegación a través del Sitio Web, distinguirle de otros usuarios, proporcionarle una mejor experiencia en el uso del mismo, e identificar problemas para mejorar nuestro Sitio Web. Asimismo, en caso de que preste su consentimiento, utilizaremos cookies que nos permitan obtener más información acerca de sus preferencias y personalizar nuestro Sitio Web de conformidad con sus intereses individuales. La presente política de cookies tiene por finalidad informarle de manera clara y precisa sobre las cookies que se utilizan en nuestro Sitio Web (la “Política de Cookies”). En caso de que quiera recabar más información sobre las cookies que utilizamos en el Sitio Web, podrá remitir un correo electrónico en el apartado correspondiente.",
-        "what-are-cookies": {
-            "title": "¿Qué son las cookies?",
-            "description": "Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita un sitio web. Se utilizan para recordar sus preferencias, mejorar la funcionalidad del sitio y recopilar información sobre cómo interactúa con el sitio."
-        },
-        "types-of-cookies": {
-            "title": "Tipos de cookies que utilizamos",
-            "description": "Nuestro Sitio Web utiliza las cookies que se describen a continuación: Cookies propias: Son aquellas cookies que son enviadas a su ordenador y gestionadas exclusivamente por nosotros para el mejor funcionamiento del Sitio Web. La información que recabamos se emplea para mejorar la calidad de nuestro servicio y su experiencia como usuario. Estas cookies permanecen en su navegador más tiempo, permitiéndonos reconocerle como visitante recurrente del Sitio Web y adaptar el contenido para ofrecerle contenidos que se ajusten a sus preferencias. Cookies analíticas de terceros: En nuestro Sitio Web también utilizamos el sistema de medición de audiencia Google Analytics, una herramienta de análisis web de Google que nos permite conocer cómo interactúan los usuarios de nuestro Sitio Web. Asimismo, habilita cookies en el dominio del sitio en el que se encuentra el usuario y utiliza un conjunto de cookies denominadas «__utma» y «__utmz» para recopilar información de forma anónima y elaborar informes de tendencias del Sitio Web sin identificar a usuarios individuales. Junto con nuestros archivos de registro del servidor, nos permiten conocer el número total de usuarios que visitan nuestro Sitio Web y aquellas partes del mismo que gozan de mayor popularidad. Gracias a ellas obtenemos una información que puede ayudarnos a mejorar la navegación y dar un mejor servicio a usuarios y clientes. Si interactúa con el contenido de nuestro Sitio Web también pueden establecerse cookies de terceros (por ejemplo, al pulsar botones de redes sociales o visionar vídeos alojados en otro sitio web). Las cookies de terceros, son aquellas establecidas por un dominio diferente de nuestro Sitio Web. No podemos acceder a los datos almacenados en las cookies de otros sitios web cuando navegue en los citados sitios web. Incluimos a continuación el enlace al sitio web de Google donde puede consultar la descripción del tipo de cookies que utiliza Google Analitycs y su periodo de expiración: https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es"
-        },
-        "consent": {
-            "title": "Consentimiento",
-            "description": "Al utilizar nuestro sitio web, usted acepta el uso de cookies de acuerdo con esta Política de Cookies. Puede cambiar sus preferencias de cookies en cualquier momento a través de la configuración de su navegador."
-        },
-        "managing-cookies": {
-            "title": "Gestión de cookies",
-            "description": "Puede gestionar sus preferencias de cookies a través de la configuración de su navegador. Tenga en cuenta que deshabilitar ciertas cookies puede afectar la funcionalidad del sitio web."
-        },
-        "change-preferences": {
-            "title": "Cambios en la política de cookies",
-            "description": "Es posible que actualicemos la Política de Cookies de nuestro Sitio Web, por ello le recomendamos revisar esta política cada vez que acceda a nuestro Sitio Web con el objetivo de estar adecuadamente informado sobre cómo y para qué usamos las cookies."
-        },
-        "more-information": {
-            "title": "Más información",
-            "description": "Si desea obtener más información sobre nuestra Política de Cookies o sobre cómo gestionamos sus datos, puede ponerse en contacto con nosotros a través de nuestro correo electrónico de contacto."
-        }
-    },
-    "privacy-policy": {
-        "point-1": {
-            "title": "Identificación y datos de contacto del Responsable",
-            "description": "Manicomio Tatto , con domicilio en C. de Gaztambide, 26, Chamberí, 28015 Madrid con CIF X7108246G, y teléfono 674 44 48 26 (en adelante, “Manicomio Tatto” ) es la responsable del tratamiento de sus datos personales. En la presente política de privacidad se facilita la información sobre el uso que realizará https://www.elmanicomiotattoo.com/ de sus datos personales en su condición de usuario de la web (https://www.elmanicomiotattoo.com/). La presente Política de Privacidad tiene por objeto facilitar información sobre los derechos que le asisten en virtud del Reglamento General de Protección de Datos (“RGPD”). Si tiene cualquier duda relativa al tratamiento de sus datos personales, contacte con https://www.elmanicomiotattoo.com/ mediante el contacto de privacidad."
-        },
-        "point-2": {
-            "title": "Información necesaria y actualizada",
-            "description": "Todos los campos que aparezcan señalados con un asterisco (*) en los formularios de la Web serán de obligada cumplimentación, de tal modo que la omisión de alguno de ellos podría comportar la imposibilidad de que se le puedan facilitar los servicios o información solicitados. Deberá proporcionar información verídica, para que la información facilitada esté siempre actualizada y no contenga errores, deberá comunicar a https://www.elmanicomiotattoo.com/ a la mayor brevedad posible, las modificaciones y rectificaciones de sus datos de carácter personal que se vayan produciendo , mediante el contacto de privacidad. Asimismo, al hacer “click” en el botón “Acepto” (o equivalente) incorporado en los citados formularios, declara que la información y los datos que en ellos ha facilitado son exactos y veraces."
-        },
-        "point-3": {
-            "title": "Información general: descripción de la información contenida en la política de privacidad",
-            "description": "En la presente política de privacidad encontrará una tabla identificando, por cada uno de los diferentes tratamientos de datos realizados por https://www.elmanicomiotattoo.com/ a la siguiente información: 1. Las finalidades del tratamiento de sus datos personales, esto es, el motivo por el cual https://www.elmanicomiotattoo.com/ trata sus datos personales. 2. Las bases legales que permiten el tratamiento de sus datos por parte de https://www.elmanicomiotattoo.com/ para cada una de las finalidades indicadas. 3. La posible comunicación de sus datos a terceros, así como la causa de dicha comunicación. A estos efectos, le informamos de que no cedemos sus datos personales a terceros salvo que exista una obligación legal o bien se trate de profesionales colaboradores designados por https://www.elmanicomiotattoo.com/ para poder prestarle el servicio contratado o encargo profesional. Los prestadores de servicios que acceden a sus datos personales, con carácter general, se dedican a los sectores de sistemas de información y tecnología. En la tabla que figura a continuación se indicarán, en su caso, aquellos otros sectores a los que se dediquen otros posibles prestadores de servicios de https://www.elmanicomiotattoo.com/ que deban acceder a sus datos personales. Le informamos de que puede solicitar mayor detalle de información respecto de los destinatarios de sus datos mediante el contacto de privacidad. indicando el tratamiento concreto sobre cuyos destinatarios querría información. 4. El plazo de conservación de los datos que nos facilite. Asimismo, le informamos de que sus datos permanecerán bloqueados para la atención de reclamaciones judiciales, administrativas o fiscales, durante los plazos que resulten de la legislación aplicable."
-        },
-        "point-4": {
-            "title": "Información detallada de los tratamientos realizados",
-            "purpose": {
-                "title": "Finalidad del tratamiento",
-                "description": "Gestionar las consultas planteadas a través del formulario de consulta. Gestionar su suscripción al Foro/Blog de https://www.elmanicomiotattoo.com/ identificada en el formulario de registro. Gestionar su registro y comentarios que facilite en el blog/foro."
-            },
-            "base-legal": {
-                "title": "Base legal del tratamiento",
-                "description": "Interés legítimo de https://www.elmanicomiotattoo.com/ para atender a los requerimientos de información a través de la Web. Relación contractual para la prestación del servicio solicitado, aun cuando el mismo tenga el carácter de gratuito."
-            },
-            "recipients": {
-                "title": "Destinatarios de los datos",
-                "description": "Sus datos pueden ser cedidos a los terceros profesionales designados por https://www.elmanicomiotattoo.com/ encargados de atender su solicitud de información. No accederán a sus datos personales prestadores de servicios adicionales de los indicados en el apartado 3c. Las categorías de destinatarios que podrán acceder a sus datos personales son los identificados en el apartado 3.c."
-            },
-            "storage-period": {
-                "title": "Plazo de conservación de los datos",
-                "description": "Hasta la resolución de su solicitud de información. Durante tres años desde la última interacción con https://www.elmanicomiotattoo.com/ o hasta que manifieste su voluntad de no continuar suscrito al foro/ blog (lo que suceda antes)"
-            }},
-        "point-5": {
-            "title": "Ejercicio de sus derechos",
-            "description": "Le informamos de que podrá ejercer los siguientes derechos: ,1. derecho de acceso a sus datos personales para saber cuáles están siendo objeto de tratamiento y las operaciones de tratamiento llevadas a cabo con ellos; 2. derecho de rectificación de cualquier dato personal inexacto; 3. derecho de supresión de sus datos personales, cuando esto sea posible; 4. derecho a solicitar la limitación del tratamiento de sus datos personales cuando la exactitud, la legalidad o la necesidad del tratamiento de los datos resulte dudosa, en cuyo caso, podremos conservarlos para el ejercicio o la defensa de reclamaciones; 5. derecho a la portabilidad de sus datos personales, cuando la base legal que nos habilite para su tratamiento de las indicadas en la tabla arriba incluida sea la relación contractual o el consentimiento; 6. derecho de oposición al tratamiento de sus datos personales, cuando la base legal que nos habilite para su tratamiento de las indicadas en la tabla arriba incluida sea el interés legítimo. A estos efectos, dejaremos de tratar sus datos salvo que tengamos un interés legítimo imperioso o para la formulación, el ejercicio o la defensa de reclamaciones. 7. derecho a revocar su consentimiento en cualquier momento. Podrá ejercitar sus derechos en cualquier momento y de forma gratuita mediante el contacto de privacidad. indicando el derecho que desea ejercitar y sus datos identificativos. Si considera que no hemos tratado sus datos personales adecuadamente puede contactar con nostros mediante el contacto de privacidad. No obstante, le informamos de que tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos si considera que se ha cometido una infracción de la legislación en materia de protección de datos respecto al tratamiento de sus datos personales."
-        },
-        "point-6": {
-            "title": "Cookies",
-            "description": "Manicomio Tatto únicamente utilizará dispositivos de almacenamiento y recuperación de datos (‘Cookies’) cuando el usuario haya dado su consentimiento previo para ello de acuerdo con lo que se indica en la ventana emergente del navegador del usuario cuando accede por primera vez a la Web y en los demás términos y condiciones que se indican en la Política de cookies de Manicomio Tatto que todo usuario debe conocer."
-        },
-        "point-7": {
-            "title": "Medidas de seguridad",
-            "description": "Manicomio Tatto adopta los niveles de seguridad requeridos por el RGPD adecuados a la naturaleza de los datos que son objeto de tratamiento en cada momento. No obstante lo anterior, la seguridad técnica en un medio como Internet no es inexpugnable y pueden existir actuaciones dolosas de terceros, si bien https://www.elmanicomiotattoo.com/ pone todos los medios a su alcance para evitar dichas actuaciones."
-        },
-        "point-8": {
-            "title": "Menores",
-            "description": "Los menores de edad no podrán usar los servicios disponibles a través de la Web sin la previa autorización de sus padres, tutores o representantes legales, quienes serán los únicos responsables de todos los actos realizados a través de la Web por los menores a su cargo, incluyendo la cumplimentación de los formularios con los datos personales de dichos menores y la marcación, en su caso, de las casillas que los acompañan."
-        },
-        "point-9": {
-            "title": "Contacto para ejercer los derechos sobre la privacidad de los datos",
-            "description": "wordpress@elmanicomiotattoo.com"
-        }
-    },
-    "legal-notice": {
-        "title": "Aviso Legal",
-        "description": "El presente Aviso Legal regula el uso del sitio web de El Manicomio Tattoo. Al acceder y utilizar este sitio web, usted acepta cumplir con los términos y condiciones establecidos en este Aviso Legal.",
-        "intellectual-property": {
-            "title": "Propiedad Intelectual",
-            "description": "Todos los contenidos del sitio web, incluyendo textos, imágenes, logotipos y diseños, son propiedad de El Manicomio Tattoo y están protegidos por las leyes de propiedad intelectual y derechos de autor. Queda prohibida la reproducción, distribución o uso no autorizado de cualquier contenido sin el consentimiento expreso de El Manicomio Tattoo."
-        },
-        "liability": {
-            "title": "Responsabilidad",
-            "description": "El Manicomio Tattoo no se hace responsable de los daños o perjuicios que puedan derivarse del uso del sitio web, incluyendo la información proporcionada en él. El uso del sitio web es bajo su propio riesgo, y se recomienda verificar la exactitud de la información antes de tomar decisiones basadas en ella."
-        },
-        "links": {
-            "title": "Enlaces",
-            "description": "El sitio web puede contener enlaces a sitios web de terceros. El Manicomio Tattoo no se hace responsable del contenido ni de las políticas de privacidad de dichos sitios web. Se recomienda revisar los términos y condiciones de cada sitio web antes de utilizarlos."
-        }
+    "location": {
+      "section-name": "Encuéntranos",
+      "title": "Ven a visitarnos",
+      "description": "Estamos en el corazón de Chamberí, Madrid. Si tienes una idea en mente, pásate por el estudio y hablamos sobre tu próximo tatuaje.",
+      "button": "Cómo llegar"
     }
+  },
+  "tattoos": {
+    "section-name": "Tatuajes",
+    "title": "Seccion de tatuajes"
+  },
+  "piercings": {
+    "section-name": "Piercings",
+    "title": "Seccion de piercins"
+  },
+  "jewelers": {
+    "section-name": "Joyería",
+    "title": "Seccion de joyería"
+  },
+  "tooth-gems": {
+    "section-name": "Gemas Dentales",
+    "title": "Seccion de Gemas Dentales"
+  },
+  "self-care": {
+    "section-name": "Cuidados",
+    "title": "Seccion de cuidados"
+  },
+  "contact": {
+    "section-name": "Contacto",
+    "title": "Seccion de Contacto"
+  },
+  "promo": {
+    "section-name": "Promo",
+    "title": "Seccion de promociones"
+  },
+  "footer": {
+    "legal": "Legal",
+    "copyright": "Todos los derechos reservados © 2026 El Manicomio Tattoo",
+    "cookie-policy": "Política de Cookies",
+    "privacy-policy": "Política de Privacidad",
+    "legal-notice": "Aviso Legal",
+    "contact": "Contacto",
+    "social-media": "Síguenos en las redes sociales"
+  },
+  "cookies-policy": {
+    "title": "Política de Cookies",
+    "description": "Nuestro sitio web https://www.elmanicomiotattoo.com/ (el “Sitio Web”) utiliza una tecnología denominada “cookies” con la finalidad de poder recabar información acerca del uso del Sitio Web. Le informamos de que podemos utilizar cookies con la finalidad de facilitar su navegación a través del Sitio Web, distinguirle de otros usuarios, proporcionarle una mejor experiencia en el uso del mismo, e identificar problemas para mejorar nuestro Sitio Web. Asimismo, en caso de que preste su consentimiento, utilizaremos cookies que nos permitan obtener más información acerca de sus preferencias y personalizar nuestro Sitio Web de conformidad con sus intereses individuales. La presente política de cookies tiene por finalidad informarle de manera clara y precisa sobre las cookies que se utilizan en nuestro Sitio Web (la “Política de Cookies”). En caso de que quiera recabar más información sobre las cookies que utilizamos en el Sitio Web, podrá remitir un correo electrónico en el apartado correspondiente.",
+    "what-are-cookies": {
+      "title": "¿Qué son las cookies?",
+      "description": "Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita un sitio web. Se utilizan para recordar sus preferencias, mejorar la funcionalidad del sitio y recopilar información sobre cómo interactúa con el sitio."
+    },
+    "types-of-cookies": {
+      "title": "Tipos de cookies que utilizamos",
+      "description": "Nuestro Sitio Web utiliza las cookies que se describen a continuación: Cookies propias: Son aquellas cookies que son enviadas a su ordenador y gestionadas exclusivamente por nosotros para el mejor funcionamiento del Sitio Web. La información que recabamos se emplea para mejorar la calidad de nuestro servicio y su experiencia como usuario. Estas cookies permanecen en su navegador más tiempo, permitiéndonos reconocerle como visitante recurrente del Sitio Web y adaptar el contenido para ofrecerle contenidos que se ajusten a sus preferencias. Cookies analíticas de terceros: En nuestro Sitio Web también utilizamos el sistema de medición de audiencia Google Analytics, una herramienta de análisis web de Google que nos permite conocer cómo interactúan los usuarios de nuestro Sitio Web. Asimismo, habilita cookies en el dominio del sitio en el que se encuentra el usuario y utiliza un conjunto de cookies denominadas «__utma» y «__utmz» para recopilar información de forma anónima y elaborar informes de tendencias del Sitio Web sin identificar a usuarios individuales. Junto con nuestros archivos de registro del servidor, nos permiten conocer el número total de usuarios que visitan nuestro Sitio Web y aquellas partes del mismo que gozan de mayor popularidad. Gracias a ellas obtenemos una información que puede ayudarnos a mejorar la navegación y dar un mejor servicio a usuarios y clientes. Si interactúa con el contenido de nuestro Sitio Web también pueden establecerse cookies de terceros (por ejemplo, al pulsar botones de redes sociales o visionar vídeos alojados en otro sitio web). Las cookies de terceros, son aquellas establecidas por un dominio diferente de nuestro Sitio Web. No podemos acceder a los datos almacenados en las cookies de otros sitios web cuando navegue en los citados sitios web. Incluimos a continuación el enlace al sitio web de Google donde puede consultar la descripción del tipo de cookies que utiliza Google Analitycs y su periodo de expiración: https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es"
+    },
+    "consent": {
+      "title": "Consentimiento",
+      "description": "Al utilizar nuestro sitio web, usted acepta el uso de cookies de acuerdo con esta Política de Cookies. Puede cambiar sus preferencias de cookies en cualquier momento a través de la configuración de su navegador."
+    },
+    "managing-cookies": {
+      "title": "Gestión de cookies",
+      "description": "Puede gestionar sus preferencias de cookies a través de la configuración de su navegador. Tenga en cuenta que deshabilitar ciertas cookies puede afectar la funcionalidad del sitio web."
+    },
+    "change-preferences": {
+      "title": "Cambios en la política de cookies",
+      "description": "Es posible que actualicemos la Política de Cookies de nuestro Sitio Web, por ello le recomendamos revisar esta política cada vez que acceda a nuestro Sitio Web con el objetivo de estar adecuadamente informado sobre cómo y para qué usamos las cookies."
+    },
+    "more-information": {
+      "title": "Más información",
+      "description": "Si desea obtener más información sobre nuestra Política de Cookies o sobre cómo gestionamos sus datos, puede ponerse en contacto con nosotros a través de nuestro correo electrónico de contacto."
+    }
+  },
+  "privacy-policy": {
+    "point-1": {
+      "title": "Identificación y datos de contacto del Responsable",
+      "description": "Manicomio Tatto , con domicilio en C. de Gaztambide, 26, Chamberí, 28015 Madrid con CIF X7108246G, y teléfono 674 44 48 26 (en adelante, “Manicomio Tatto” ) es la responsable del tratamiento de sus datos personales. En la presente política de privacidad se facilita la información sobre el uso que realizará https://www.elmanicomiotattoo.com/ de sus datos personales en su condición de usuario de la web (https://www.elmanicomiotattoo.com/). La presente Política de Privacidad tiene por objeto facilitar información sobre los derechos que le asisten en virtud del Reglamento General de Protección de Datos (“RGPD”). Si tiene cualquier duda relativa al tratamiento de sus datos personales, contacte con https://www.elmanicomiotattoo.com/ mediante el contacto de privacidad."
+    },
+    "point-2": {
+      "title": "Información necesaria y actualizada",
+      "description": "Todos los campos que aparezcan señalados con un asterisco (*) en los formularios de la Web serán de obligada cumplimentación, de tal modo que la omisión de alguno de ellos podría comportar la imposibilidad de que se le puedan facilitar los servicios o información solicitados. Deberá proporcionar información verídica, para que la información facilitada esté siempre actualizada y no contenga errores, deberá comunicar a https://www.elmanicomiotattoo.com/ a la mayor brevedad posible, las modificaciones y rectificaciones de sus datos de carácter personal que se vayan produciendo , mediante el contacto de privacidad. Asimismo, al hacer “click” en el botón “Acepto” (o equivalente) incorporado en los citados formularios, declara que la información y los datos que en ellos ha facilitado son exactos y veraces."
+    },
+    "point-3": {
+      "title": "Información general: descripción de la información contenida en la política de privacidad",
+      "description": "En la presente política de privacidad encontrará una tabla identificando, por cada uno de los diferentes tratamientos de datos realizados por https://www.elmanicomiotattoo.com/ a la siguiente información: 1. Las finalidades del tratamiento de sus datos personales, esto es, el motivo por el cual https://www.elmanicomiotattoo.com/ trata sus datos personales. 2. Las bases legales que permiten el tratamiento de sus datos por parte de https://www.elmanicomiotattoo.com/ para cada una de las finalidades indicadas. 3. La posible comunicación de sus datos a terceros, así como la causa de dicha comunicación. A estos efectos, le informamos de que no cedemos sus datos personales a terceros salvo que exista una obligación legal o bien se trate de profesionales colaboradores designados por https://www.elmanicomiotattoo.com/ para poder prestarle el servicio contratado o encargo profesional. Los prestadores de servicios que acceden a sus datos personales, con carácter general, se dedican a los sectores de sistemas de información y tecnología. En la tabla que figura a continuación se indicarán, en su caso, aquellos otros sectores a los que se dediquen otros posibles prestadores de servicios de https://www.elmanicomiotattoo.com/ que deban acceder a sus datos personales. Le informamos de que puede solicitar mayor detalle de información respecto de los destinatarios de sus datos mediante el contacto de privacidad. indicando el tratamiento concreto sobre cuyos destinatarios querría información. 4. El plazo de conservación de los datos que nos facilite. Asimismo, le informamos de que sus datos permanecerán bloqueados para la atención de reclamaciones judiciales, administrativas o fiscales, durante los plazos que resulten de la legislación aplicable."
+    },
+    "point-4": {
+      "title": "Información detallada de los tratamientos realizados",
+      "purpose": {
+        "title": "Finalidad del tratamiento",
+        "description": "Gestionar las consultas planteadas a través del formulario de consulta. Gestionar su suscripción al Foro/Blog de https://www.elmanicomiotattoo.com/ identificada en el formulario de registro. Gestionar su registro y comentarios que facilite en el blog/foro."
+      },
+      "base-legal": {
+        "title": "Base legal del tratamiento",
+        "description": "Interés legítimo de https://www.elmanicomiotattoo.com/ para atender a los requerimientos de información a través de la Web. Relación contractual para la prestación del servicio solicitado, aun cuando el mismo tenga el carácter de gratuito."
+      },
+      "recipients": {
+        "title": "Destinatarios de los datos",
+        "description": "Sus datos pueden ser cedidos a los terceros profesionales designados por https://www.elmanicomiotattoo.com/ encargados de atender su solicitud de información. No accederán a sus datos personales prestadores de servicios adicionales de los indicados en el apartado 3c. Las categorías de destinatarios que podrán acceder a sus datos personales son los identificados en el apartado 3.c."
+      },
+      "storage-period": {
+        "title": "Plazo de conservación de los datos",
+        "description": "Hasta la resolución de su solicitud de información. Durante tres años desde la última interacción con https://www.elmanicomiotattoo.com/ o hasta que manifieste su voluntad de no continuar suscrito al foro/ blog (lo que suceda antes)"
+      }
+    },
+    "point-5": {
+      "title": "Ejercicio de sus derechos",
+      "description": "Le informamos de que podrá ejercer los siguientes derechos: ,1. derecho de acceso a sus datos personales para saber cuáles están siendo objeto de tratamiento y las operaciones de tratamiento llevadas a cabo con ellos; 2. derecho de rectificación de cualquier dato personal inexacto; 3. derecho de supresión de sus datos personales, cuando esto sea posible; 4. derecho a solicitar la limitación del tratamiento de sus datos personales cuando la exactitud, la legalidad o la necesidad del tratamiento de los datos resulte dudosa, en cuyo caso, podremos conservarlos para el ejercicio o la defensa de reclamaciones; 5. derecho a la portabilidad de sus datos personales, cuando la base legal que nos habilite para su tratamiento de las indicadas en la tabla arriba incluida sea la relación contractual o el consentimiento; 6. derecho de oposición al tratamiento de sus datos personales, cuando la base legal que nos habilite para su tratamiento de las indicadas en la tabla arriba incluida sea el interés legítimo. A estos efectos, dejaremos de tratar sus datos salvo que tengamos un interés legítimo imperioso o para la formulación, el ejercicio o la defensa de reclamaciones. 7. derecho a revocar su consentimiento en cualquier momento. Podrá ejercitar sus derechos en cualquier momento y de forma gratuita mediante el contacto de privacidad. indicando el derecho que desea ejercitar y sus datos identificativos. Si considera que no hemos tratado sus datos personales adecuadamente puede contactar con nostros mediante el contacto de privacidad. No obstante, le informamos de que tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos si considera que se ha cometido una infracción de la legislación en materia de protección de datos respecto al tratamiento de sus datos personales."
+    },
+    "point-6": {
+      "title": "Cookies",
+      "description": "Manicomio Tatto únicamente utilizará dispositivos de almacenamiento y recuperación de datos ('Cookies') cuando el usuario haya dado su consentimiento previo para ello de acuerdo con lo que se indica en la ventana emergente del navegador del usuario cuando accede por primera vez a la Web y en los demás términos y condiciones que se indican en la Política de cookies de Manicomio Tatto que todo usuario debe conocer."
+    },
+    "point-7": {
+      "title": "Medidas de seguridad",
+      "description": "Manicomio Tatto adopta los niveles de seguridad requeridos por el RGPD adecuados a la naturaleza de los datos que son objeto de tratamiento en cada momento. No obstante lo anterior, la seguridad técnica en un medio como Internet no es inexpugnable y pueden existir actuaciones dolosas de terceros, si bien https://www.elmanicomiotattoo.com/ pone todos los medios a su alcance para evitar dichas actuaciones."
+    },
+    "point-8": {
+      "title": "Menores",
+      "description": "Los menores de edad no podrán usar los servicios disponibles a través de la Web sin la previa autorización de sus padres, tutores o representantes legales, quienes serán los únicos responsables de todos los actos realizados a través de la Web por los menores a su cargo, incluyendo la cumplimentación de los formularios con los datos personales de dichos menores y la marcación, en su caso, de las casillas que los acompañan."
+    },
+    "point-9": {
+      "title": "Contacto para ejercer los derechos sobre la privacidad de los datos"
+    }
+  },
+  "legal-notice": {
+    "title": "Aviso Legal",
+    "general-info": {
+      "title": "Información general",
+      "description": "En cumplimiento con el deber de información dispuesto en la Ley 34/2002 de Servicios de la Sociedad de la Información y el Comercio Electrónico (LSSI-CE) de 11 de julio, se facilitan a continuación los siguientes datos de información general de este sitio web: La titularidad de este sitio web, https://www.elmanicomiotattoo.com/ (en adelante Sitio Web) la ostenta: Agencia Nous, con NIF: X7108246G y cuyos datos de contacto son: C. de Gaztambide, 26, Chamberí, 28015 Madrid, +34 674 44 48 26"
+    },
+    "terms-and-conditions": {
+      "title": "Términos y condiciones generales de uso",
+      "objective": {
+        "title": "El objetivo de las condiciones: El sitio web",
+        "description": "El objeto de las presentes Condiciones Generales de Uso (en adelante Condiciones) es regular el acceso y la utilización del Sitio Web. A los efectos de las presentes Condiciones se entenderá como Sitio Web: La apariencia externa de los interfaces de pantalla, tanto de forma estática como de forma dinámica, es decir, el árbol de navegación; y todos los elementos integrados tanto en los interfaces de pantalla como en el árbol de navegación (en adelante Contenidos) y todos aquellos servicios o recursos en línea que en su caso ofrezca a los Usuarios (en adelante Servicios). https://www.elmanicomiotattoo.com/ se reserva la facultad de modificar, en cualquier momento, y sin aviso previo, la presentación y configuración del Sitio Web y de los Contenidos y Servicios que en él pudieran estar incorporados. El Usuario reconoce y acepta que en cualquier momento https://www.elmanicomiotattoo.com/ pueda interrumpir, desactivar y/o cancelar cualquiera de estos elementos que se integran en el Sitio Web o el acceso a los mismos. El acceso al Sitio Web por el Usuario tiene carácter libre y, por regla general, es gratuito sin que el Usuario tenga que proporcionar una contraprestación para poder disfrutar de ello, salvo en lo relativo al coste de conexión a través de la red de telecomunicaciones suministrada por el proveedor de acceso que hubiere contratado el Usuario. La utilización de alguno de los Contenidos o Servicios del Sitio Web podrá hacerse mediante la suscripción o registro previo del Usuario."
+      },
+      "user": {
+        "title": "El usuario",
+        "description": "El acceso, la navegación y uso del Sitio Web, así como por los espacios habilitados para interactuar entre los Usuarios, y el Usuario y https://www.elmanicomiotattoo.com/, como los comentarios y/o espacios de blogging, confiere la condición de Usuario, por lo que se aceptan, desde que se inicia la navegación por el Sitio Web, todas las Condiciones aquí establecidas, así como sus ulteriores modificaciones, sin perjuicio de la aplicación de la correspondiente normativa legal de obligado cumplimiento según el caso. Dada la relevancia de lo anterior, se recomienda al Usuario leerlas cada vez que visite el Sitio Web. El Sitio Web de https://www.elmanicomiotattoo.com/ proporciona gran diversidad de información, servicios y datos. El Usuario asume su responsabilidad para realizar un uso correcto del Sitio Web. Esta responsabilidad se extenderá a: Un uso de la información, Contenidos y/o Servicios y datos ofrecidos por https://www.elmanicomiotattoo.com/ sin que sea contrario a lo dispuesto por las presentes Condiciones, la Ley, la moral o el orden público, o que de cualquier otro modo puedan suponer lesión de los derechos de terceros o del mismo funcionamiento del Sitio Web. La veracidad y licitud de las informaciones aportadas por el Usuario en los formularios extendidos por https://www.elmanicomiotattoo.com/ para el acceso a ciertos Contenidos o Servicios ofrecidos por el Sitio Web. En todo caso, el Usuario notificará de forma inmediata a https://www.elmanicomiotattoo.com/ acerca de cualquier hecho que permita el uso indebido de la información registrada en dichos formularios, tales como, pero no sólo, el robo, extravío, o el acceso no autorizado a identificadores y/o contraseñas, con el fin de proceder a su inmediata cancelación. https://www.elmanicomiotattoo.com/ se reserva el derecho de retirar todos aquellos comentarios y aportaciones que vulneren la ley, el respeto a la dignidad de la persona, que sean discriminatorios, xenófobos, racistas, pornográficos, spamming, que atenten contra la juventud o la infancia, el orden o la seguridad pública o que, a su juicio, no resultaran adecuados para su publicación. En cualquier caso, https://www.elmanicomiotattoo.com/ no será responsable de las opiniones vertidas por los Usuarios a través de comentarios u otras herramientas de blogging o de participación que puedan haber. El mero acceso a este Sitio Web no supone entablar ningún tipo de relación de carácter comercial entre https://www.elmanicomiotattoo.com/ y el Usuario. El Usuario declara ser mayor de edad y disponer de la capacidad jurídica suficiente para vincularse por las presentes Condiciones. Por lo tanto, este Sitio Web de https://www.elmanicomiotattoo.com/ no se dirige a menores de edad. https://www.elmanicomiotattoo.com/ declina cualquier responsabilidad por el incumplimiento de este requisito. El Sitio Web está dirigido principalmente a Usuarios residentes en España. https://www.elmanicomiotattoo.com/ no asegura que el Sitio Web cumpla con legislaciones de otros países, ya sea total o parcialmente. Si el Usuario reside o tiene su domiciliado en otro lugar y decide acceder y/o navegar en el Sitio Web lo hará bajo su propia responsabilidad, deberá asegurarse de que tal acceso y navegación cumple con la legislación local que le es aplicable, no asumiendo https://www.elmanicomiotattoo.com/ responsabilidad alguna que se pueda derivar de dicho acceso."
+      },
+      "access-and-navegation": {
+        "title": "Acceso y navegación en el sitio web: Exclusión de garantías y responsabilidad",
+        "description": "https://www.elmanicomiotattoo.com/ no garantiza la continuidad, disponibilidad y utilidad del Sitio Web, ni de los Contenidos o Servicios. https://www.elmanicomiotattoo.com/ hará todo lo posible por el buen funcionamiento del Sitio Web, sin embargo, no se responsabiliza ni garantiza que el acceso a este Sitio Web no vaya a ser ininterrumpido o que esté libre de error. Tampoco se responsabiliza o garantiza que el contenido o software al que pueda accederse a través de este Sitio Web, esté libre de error o cause un daño al sistema informático (software y hardware) del Usuario. En ningún caso https://www.elmanicomiotattoo.com/ será responsable por las pérdidas, daños o perjuicios de cualquier tipo que surjan por el acceso, navegación y el uso del Sitio Web, incluyéndose, pero no limitándose, a los ocasionados a los sistemas informáticos o los provocados por la introducción de virus. https://www.elmanicomiotattoo.com/ tampoco se hace responsable de los daños que pudiesen ocasionarse a los usuarios por un uso inadecuado de este Sitio Web. En particular, no se hace responsable en modo alguno de las caídas, interrupciones, falta o defecto de las telecomunicaciones que pudieran ocurrir."
+      },
+      "link-policy": {
+        "title": "Política de enlaces",
+        "description": "Se informa que el Sitio Web de https://www.elmanicomiotattoo.com/ pone o puede poner a disposición de los Usuarios medios de enlace (como, entre otros, links, banners, botones), directorios y motores de búsqueda que permiten a los Usuarios acceder a sitios web pertenecientes y/o gestionados por terceros. La instalación de estos enlaces, directorios y motores de búsqueda en el Sitio Web tiene por objeto facilitar a los Usuarios la búsqueda de y acceso a la información disponible en Internet, sin que pueda considerarse una sugerencia, recomendación o invitación para la visita de los mismos. https://www.elmanicomiotattoo.com/ no ofrece ni comercializa por sí ni por medio de terceros los productos y/o servicios disponibles en dichos sitios enlazados. Asimismo, tampoco garantizará la disponibilidad técnica, exactitud, veracidad, validez o legalidad de sitios ajenos a su propiedad a los que se pueda acceder por medio de los enlaces. https://www.elmanicomiotattoo.com/ en ningún caso revisará o controlará el contenido de otros sitios web, así como tampoco aprueba, examina ni hace propios los productos y servicios, contenidos, archivos y cualquier otro material existente en los referidos sitios enlazados. https://www.elmanicomiotattoo.com/ no asume ninguna responsabilidad por los daños y perjuicios que pudieran producirse por el acceso, uso, calidad o licitud de los contenidos, comunicaciones, opiniones, productos y servicios de los sitios web no gestionados por https://www.elmanicomiotattoo.com/ y que sean enlazados en este Sitio Web. El Usuario o tercero que realice un hipervínculo desde una página web de otro, distinto, sitio web al Sitio Web de https://www.elmanicomiotattoo.com/ deberá saber que: No se permite la reproducción —total o parcialmente— de ninguno Contenidos y/o Servicios del Sitio Web sin autorización expresa de https://www.elmanicomiotattoo.com/. No se permite tampoco ninguna manifestación falsa, inexacta o incorrecta sobre el Sitio Web de https://www.elmanicomiotattoo.com/, ni sobre los Contenidos y/o Servicios del mismo. A excepción del hipervínculo, el sitio web en el que se establezca dicho hiperenlace no contendrá ningún elemento, de este Sitio Web, protegido como propiedad intelectual por el ordenamiento jurídico español, salvo autorización expresa de https://www.elmanicomiotattoo.com/. El establecimiento del hipervínculo no implicará la existencia de relaciones entre https://www.elmanicomiotattoo.com/ y el titular del sitio web desde el cual se realice, ni el conocimiento y aceptación de https://www.elmanicomiotattoo.com/ de los contenidos, servicios y/o actividades ofrecidos en dicho sitio web, y viceversa."
+      },
+      "intellectual-property": {
+        "title": "Propuedad intelectual e industrial",
+        "description": "https://www.elmanicomiotattoo.com/ por sí o como parte cesionaria, es titular de todos los derechos de propiedad intelectual e industrial del Sitio Web, así como de los elementos contenidos en el mismo (a título enunciativo y no exhaustivo, imágenes, sonido, audio, vídeo, software o textos, marcas o logotipos, combinaciones de colores, estructura y diseño, selección de materiales usados, programas de ordenador necesarios para su funcionamiento, acceso y uso, etc.). Serán, por consiguiente, obras protegidas como propiedad intelectual por el ordenamiento jurídico español, siéndoles aplicables tanto la normativa española y comunitaria en este campo, como los tratados internacionales relativos a la materia y suscritos por España. Todos los derechos reservados. En virtud de lo dispuesto en la Ley de Propiedad Intelectual, quedan expresamente prohibidas la reproducción, la distribución y la comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los contenidos de esta página web, con fines comerciales, en cualquier soporte y por cualquier medio técnico, sin la autorización de https://www.elmanicomiotattoo.com/. El Usuario se compromete a respetar los derechos de propiedad intelectual e industrial de https://www.elmanicomiotattoo.com/. Podrá visualizar los elementos del Sitio Web o incluso imprimirlos, copiarlos y almacenarlos en el disco duro de su ordenador o en cualquier otro soporte físico siempre y cuando sea, exclusivamente, para su uso personal. El Usuario, sin embargo, no podrá suprimir, alterar, o manipular cualquier dispositivo de protección o sistema de seguridad que estuviera instalado en el Sitio Web. En caso de que el Usuario o tercero considere que cualquiera de los Contenidos del Sitio Web suponga una violación de los derechos de los derechos de protección de la propiedad intelectual, deberá comunicarlo inmediatamente a https://www.elmanicomiotattoo.com/ a través de los datos de contacto del apartado de INFORMACIÓN GENERAL de este Aviso Legal y Condiciones Generales de Uso."
+      },
+      "legal-jurisdiction": {
+        "title": "Acciones legales, legislación aplicable y jurisdicción",
+        "description": "https://www.elmanicomiotattoo.com/ se reserva la facultad de presentar las acciones civiles o penales que considere necesarias por la utilización indebida del Sitio Web y Contenidos, o por el incumplimiento de las presentes Condiciones. La relación entre el Usuario y https://www.elmanicomiotattoo.com/ se regirá por la normativa vigente y de aplicación en el territorio español. De surgir cualquier controversia en relación a la interpretación y/o a la aplicación de estas Condiciones las partes someterán sus conflictos a la jurisdicción ordinaria sometiéndose a los jueces y tribunales que correspondan conforme a derecho."
+      },
+      "personal-data": {
+        "title": "Protección de datos personales",
+        "description": "Para más información sobre el tratamiento de sus datos personales en el Portal diríjase a la Política de privacidad."
+      }
+    }
+  },
+  "whatsapp-message": {
+    "text": "Hola, me gustaría agendar una cita para un tatuaje. ¿Podrían indicarme la disponibilidad y los pasos a seguir? ¡Gracias!"
+  }
 }

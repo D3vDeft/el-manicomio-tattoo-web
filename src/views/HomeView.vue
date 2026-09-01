@@ -44,12 +44,11 @@
 
                 <div class="text-center">
 
-                    <p class="uppercase tracking-[0.35em] text-xs md:text-sm text-white/60 mb-5">
+                    <p class="uppercase tracking-[0.35em] text-xl md:text-sm text-white/60 mb-5">
                         El Manicomio Tattoo
                     </p>
 
-                    <h1
-                        class="font-display text-4xl md:text-6xl lg:text-7xl leading-tight text-white mb-10 drop-shadow-lg">
+                    <h1 class="font-display text-6xl leading-tight text-white mb-10 drop-shadow-lg">
                         {{ $t('home.title') }}
                         <br>
 
@@ -58,7 +57,7 @@
                         </span>
                     </h1>
 
-                    <div class="max-w-3xl mx-auto space-y-6 text-white text-base md:text-lg leading-8 drop-shadow-md">
+                    <div class="max-w-3xl mx-auto space-y-6 text-white text-xl leading-8 drop-shadow-md">
 
                         <p>
                             {{ $t('home.description-start') }}
@@ -86,9 +85,9 @@
 
                     </div>
 
-                    <a href="https://wa.me/34674444826?text=Hola%20quiero%20agendar%20una%20cita" target="_blank"
-                        rel="noopener noreferrer"
-                        class="inline-flex mt-10 border border-white/60 hover:border-white hover:bg-white hover:text-black px-7 py-3 uppercase tracking-[0.2em] text-xs font-medium transition-all duration-300">
+                    <a :href="`https://wa.me/34674444826?text=${encodeURIComponent($t('whatsapp-message.text'))}`"
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-flex mt-10 border border-white/60 hover:border-white hover:bg-white hover:text-black px-11 py-7 uppercase tracking-[0.2em] text-xl font-medium transition-all duration-300">
                         {{ $t('home.contact-init') }}
                     </a>
 
@@ -111,7 +110,6 @@
         <!-- ========================================== -->
         <!-- PORTFOLIO -->
         <!-- ========================================== -->
-
         <section class="relative py-24 md:py-32">
 
             <div class="relative z-10">
@@ -119,17 +117,46 @@
                 <!-- Cabecera -->
                 <div class="max-w-7xl mx-auto px-6 mb-12">
 
-                    <p class="uppercase tracking-[0.35em] text-xs text-white/60 mb-4">
+                    <p class="uppercase tracking-[0.35em] text-xl text-white/60 mb-4">
                         {{ $t('home.portfolio.section-name') }}
                     </p>
 
-                    <h2 class="font-display text-4xl md:text-6xl text-white">
+                    <h2 class="font-display text-6xl text-white">
                         {{ $t('home.portfolio.title') }}
                     </h2>
 
-                    <p class="text-white/70 max-w-xl mt-5 leading-7">
+                    <p class="text-white/70 max-w-xl mt-5 leading-7 text-2xl">
                         {{ $t('home.portfolio.description') }}
                     </p>
+
+                    <!-- Redes sociales -->
+                    <div class="flex flex-wrap items-center gap-4 mt-8">
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/elmanicomiotattoo/" target="_blank" rel="noopener noreferrer"
+                            class="group inline-flex items-center gap-3 border border-white/20 px-9 py-5 text-white/80 hover:text-white hover:border-white/50 transition-all duration-300"
+                            aria-label="Instagram de El Manicomio Tattoo">
+                            <Camera :size="20" :stroke-width="1.5"
+                                class="transition-transform duration-300 group-hover:scale-110" />
+
+                            <span class="text-sm uppercase tracking-[0.2em]">
+                                Instagram
+                            </span>
+                        </a>
+
+                        <!-- TikTok -->
+                        <a href="https://www.tiktok.com/@elmanicomiotattoo" target="_blank" rel="noopener noreferrer"
+                            class="group inline-flex items-center gap-3 border border-white/20 px-9 py-5 text-white/80 hover:text-white hover:border-white/50 transition-all duration-300"
+                            aria-label="TikTok de El Manicomio Tattoo">
+                            <Music2 :size="20" :stroke-width="1.5"
+                                class="transition-transform duration-300 group-hover:scale-110" />
+
+                            <span class="text-sm uppercase tracking-[0.2em]">
+                                TikTok
+                            </span>
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -176,8 +203,6 @@
 
 
                         <!-- SEGUNDO GRUPO -->
-                        <!-- Es exactamente igual para crear el loop -->
-
                         <div class="flex gap-5 pr-5">
 
                             <img src="https://elmanicomiotattoo.es/wp-content/uploads/2025/04/01T2.webp"
@@ -207,6 +232,7 @@
         </section>
 
 
+
         <!-- ========================================== -->
         <!-- LÍNEA DIVISORIA -->
         <!-- ========================================== -->
@@ -224,11 +250,11 @@
 
             <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
 
-                <p class="uppercase tracking-[0.35em] text-xs text-white/60 mb-4">
+                <p class="uppercase tracking-[0.35em] text-xl text-white/60 mb-4">
                     {{ $t('home.reviews.section-name') }}
                 </p>
 
-                <h2 class="font-display text-4xl md:text-6xl text-white mb-12 drop-shadow-lg">
+                <h2 class="font-display text-6xl text-white mb-12 drop-shadow-lg">
                     {{ $t('home.reviews.title') }}
                 </h2>
 
@@ -241,21 +267,21 @@
                             4.9
                         </span>
 
-                        <div class="text-yellow-400 text-xl tracking-widest">
+                        <div class="text-yellow-400 text-2xl tracking-widest">
                             ★★★★★
                         </div>
 
                     </div>
 
 
-                    <p class="text-white/70 mt-4 mb-8">
+                    <p class="text-white/70 text-xl mt-4 mb-8">
                         {{ $t('home.reviews.description') }}
                     </p>
 
 
                     <a href="https://www.google.com/maps/search/?api=1&query=El+Manicomio+Tattoo+%26+Piercing+Madrid"
                         target="_blank" rel="noopener noreferrer"
-                        class="border border-white/50 hover:bg-white hover:text-black px-7 py-3 uppercase tracking-[0.2em] text-xs transition-all duration-300">
+                        class="border border-white/50 hover:bg-white hover:text-black px-7 py-3 uppercase tracking-[0.2em] text-xl transition-all duration-300">
                         {{ $t('home.reviews.button') }}
                     </a>
 
@@ -289,21 +315,21 @@
 
                     <div>
 
-                        <p class="uppercase tracking-[0.35em] text-xs text-white/60 mb-4">
+                        <p class="uppercase tracking-[0.35em] text-xl text-white/60 mb-4">
                             {{ $t('home.location.section-name') }}
                         </p>
 
-                        <h2 class="font-display text-4xl md:text-6xl text-white mb-6">
+                        <h2 class="font-display text-6xl text-white mb-6">
                             {{ $t('home.location.title') }}
                         </h2>
 
 
-                        <p class="text-white/70 leading-8 mb-8">
+                        <p class="text-white/70 leading-8 mb-8 text-xl">
                             {{ $t('home.location.description') }}
                         </p>
 
 
-                        <div class="text-white mb-8">
+                        <div class="text-white mb-8 text-2xl leading-8 space-y-1">
 
                             <p>
                                 C. de Gaztambide, 26
@@ -318,7 +344,7 @@
 
                         <a href="https://www.google.com/maps/search/?api=1&query=Calle+de+Gaztambide+26+Madrid"
                             target="_blank" rel="noopener noreferrer"
-                            class="inline-flex border border-white/50 hover:bg-white hover:text-black px-7 py-3 uppercase tracking-[0.2em] text-xs transition-all duration-300">
+                            class="inline-flex border border-white/50 hover:bg-white hover:text-black px-7 py-3 uppercase tracking-[0.2em] text-xl transition-all duration-300">
                             {{ $t('home.location.button') }}
                         </a>
 
@@ -347,7 +373,7 @@
 
 
 <script setup lang="ts">
-
+import { Camera, Music2 } from '@lucide/vue'
 </script>
 
 

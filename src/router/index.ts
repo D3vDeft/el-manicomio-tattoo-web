@@ -9,8 +9,7 @@ import PromoView from '@/views/PromoView.vue';
 import SalfCareView from '@/views/SalfCareView.vue';
 import TattooView from '@/views/TattooView.vue';
 import ToothGemsView from '@/views/ToothGemsView.vue';
-import { createRouter, createWebHistory } from 'vue-router'
-
+import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,53 +17,59 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
     },
     {
       path: '/tattoos',
       name: 'tattoos',
-      component: TattooView
+      component: TattooView,
     },
     {
       path: '/piercings',
       name: 'piercings',
-      component: PiercingsView
+      component: PiercingsView,
     },
     {
       path: '/tooth-gems',
       name: 'tooth-gems',
-      component: ToothGemsView
-    },{
+      component: ToothGemsView,
+    },
+    {
       path: '/jewelers',
       name: 'jewelers',
-      component: JewelersView
-    },{
+      component: JewelersView,
+    },
+    {
       path: '/self-care',
       name: 'self-care',
-      component: SalfCareView
-    },{
+      component: SalfCareView,
+    },
+    {
       path: '/contact',
       name: 'contact',
-      component: ContactView
-    },{
+      component: ContactView,
+    },
+    {
       path: '/promo',
       name: 'promo',
-      component: PromoView
-    },{
+      component: PromoView,
+    },
+    {
       path: '/cookie-policy',
       name: 'Cookie Policy',
-      component: CookiesPolicyView
-    },{
+      component: CookiesPolicyView,
+    },
+    {
       path: '/privacy-policy',
       name: 'Privacy Policy',
-      component: PrivacyPolicyView
-    },{
+      component: PrivacyPolicyView,
+    },
+    {
       path: '/legal-notice',
       name: 'Legal Notice',
-      component: LegalNoticeView
+      component: LegalNoticeView,
     },
-
-  ]
+  ],
 });
 
 export default router;
