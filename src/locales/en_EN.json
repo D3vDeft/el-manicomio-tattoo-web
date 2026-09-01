@@ -1,0 +1,165 @@
+{
+    "home":{
+        "section-name" : "Home",
+        "title" : "Tattoos with personality.",
+        "subtitle" : "Designed for you.",
+        "description-start" : "At",
+        "description-end" : "we turn ideas, stories, and emotions into pieces you carry with you forever.",
+        "about-start" : "We are a",
+        "about-black": "tattoo and piercing studio in Madrid",
+        "about-end" : "located in Chamberí, where each project begins by listening to what you want to tell and ends by creating something completely yours.",
+        "about-studio-start": "We work in different tattoo styles, from",
+        "about-studio-black": "realism and blackwork",
+        "about-studio-end": "to color, lettering, and custom designs. Our goal is not just to make a tattoo, but to create a piece that makes sense to you.",
+        "contact-init" : "Tell us your idea",
+        "portfolio": {
+            "section-name" : "Portfolio",
+            "title" : "Our Work",
+            "description" : "Every skin is a different canvas. Discover some of the work done by our artists."
+        },
+        "reviews": {
+            "section-name" : "Experiences",
+            "title" : "What our clients say",
+            "description" : "More than 400 reviews on Google",
+            "button" : "See reviews"
+        },
+        "location": {
+            "section-name" : "Find us",
+            "title" : "Come visit us",
+            "description" : "We are in the heart of Chamberí, Madrid. If you have an idea in mind, stop by the studio and let's talk about your next tattoo.",
+            "button" : "How to get there"
+        }
+    },
+    "tattoos":{
+        "section-name" : "Tattoos",
+        "title" : "Tattoos Section"
+    },
+    "piercings": {
+        "section-name" : "Piercings",
+        "title" : "Piercins Section"
+    },
+    "jewelers": {
+        "section-name" : "Jewelers",
+        "title" : "Jewelers Section"
+    },
+    "tooth-gems": {
+        "section-name" : "Tooth Gems",
+        "title" : "Tooth Gems Section"
+    },
+    "self-care":{
+        "section-name" : "Self Care",
+        "title" : "Self Care Section"
+    },
+    "contact":{
+        "section-name" : "Contact",
+        "title" : "Contact Section"
+    },
+    "promo":{
+        "section-name" : "Promo",
+        "title" : "Promo Section"
+    },
+    "footer": {
+        "legal" : "Legal",
+        "copyright" : "All rights reserved © 2026 El Manicomio Tattoo",
+        "cookie-policy" : "Cookie Policy",
+        "privacy-policy" : "Privacy Policy",
+        "legal-notice" : "Legal Notice",
+        "contact" : "Contact",
+        "social-media" : "Follow us on social media"
+    },"cookies-policy": {
+        "title": "Cookies Policy",
+        "description": "Our website https://www.elmanicomiotattoo.com/ (the “Website”) uses a technology called “cookies” in order to collect information about the use of the Website. We inform you that we may use cookies in order to facilitate your navigation through the Website, distinguish you from other users, provide you with a better experience in using it, and identify problems to improve our Website. Likewise, if you give your consent, we will use cookies that allow us to obtain more information about your preferences and customize our Website in accordance with your individual interests. This cookie policy aims to inform you clearly and precisely about the cookies used on our Website (the “Cookie Policy”). If you want to gather more information about the cookies we use on the Website, you can send an email to the corresponding section.",
+        "what-are-cookies": {
+            "title": "What are cookies?",
+            "description": "Cookies are small text files that are stored on your device when you visit a website. They are used to remember your preferences, improve the functionality of the site, and collect information about how you interact with the site."
+        },
+        "types-of-cookies": {
+            "title": "Types of cookies we use",
+            "description": "We use different types of cookies on our website, including essential cookies, performance cookies, functional cookies, and advertising cookies. Each type of cookie has a specific purpose and is used to enhance your experience on our site."
+        },
+        "consent": {
+            "title": "Consent",
+            "description": "By using our website, you consent to the use of cookies in accordance with this Cookies Policy. You can change your cookie preferences at any time through your browser settings."
+        },
+        "managing-cookies": {
+            "title": "Managing cookies",
+            "description": "You can manage your cookie preferences through your browser settings. Please note that disabling certain cookies may affect the functionality of the website."
+        },
+        "change-preferences": {
+            "title": "Changes to the cookies policy",
+            "description": "We may update the Cookies Policy of our Website, so we recommend reviewing this policy each time you access our Website in order to be adequately informed about how and for what purposes we use cookies."
+        },
+        "more-information": {
+            "title": "More information",
+            "description": "If you would like to obtain more information about our Cookies Policy or about how we manage your data, you can contact us through our contact email."
+        }
+    },
+    "privacy-policy": {
+        "point-1": {
+            "title": "Identification and contact details of the Data Controller",
+            "description": "Manicomio Tatto, located at C. de Gaztambide, 26, Chamberí, 28015 Madrid, with CIF X7108246G, and phone number 674 44 48 26 (hereinafter, “Manicomio Tatto”) is responsible for the processing of your personal data. This privacy policy provides information about the use that https://www.elmanicomiotattoo.com/ will make of your personal data in its capacity as a user of the website (https://www.elmanicomiotattoo.com/). This Privacy Policy aims to provide information about the rights you have under the General Data Protection Regulation (“GDPR”). If you have any questions regarding the processing of your personal data, please contact https://www.elmanicomiotattoo.com/ through the privacy contact."
+        },
+        "point-2": {
+            "title": "Necessary and updated information",
+            "description": "All fields marked with an asterisk (*) in the website forms are mandatory, so omitting any of them may result in the inability to provide the requested services or information. You must provide truthful information so that the information provided is always up to date and accurate. You must communicate any changes and corrections to your personal data to https://www.elmanicomiotattoo.com/ as soon as possible, through the privacy contact. Likewise, by clicking the “I accept” button (or equivalent) incorporated in the aforementioned forms, you declare that the information and data you have provided in them are accurate and true."
+        },
+        "point-3": {
+            "title": "General information: description of the information contained in the privacy policy",
+            "description": "In this privacy policy you will find a table identifying, for each of the different data processing operations carried out by https://www.elmanicomiotattoo.com/ the following information: 1. The purposes of the processing of your personal data, that is, the reason why https://www.elmanicomiotattoo.com/ processes your personal data. 2. The legal bases that allow the processing of your data by https://www.elmanicomiotattoo.com/ for each of the indicated purposes. 3. The possible communication of your data to third parties, as well as the reason for such communication. To this end, we inform you that we do not transfer your personal data to third parties unless there is a legal obligation or it is about collaborating professionals designated by https://www.elmanicomiotattoo.com/ to provide the contracted service or professional assignment. The service providers who access your personal data generally belong to the information and technology systems sectors. In the table below, we will indicate, where appropriate, those other sectors to which other possible service providers of https://www.elmanicomiotattoo.com/ who must access your personal data belong. We inform you that you can request more detailed information regarding the recipients of your data through the privacy contact, indicating the specific processing for which you would like information. 4. The retention period of the data you provide us. Likewise, we inform you that your data will remain blocked for the attention of judicial, administrative or tax claims, for the periods resulting from the applicable legislation."
+        },
+        "point-4": {
+            "title": "Detailed information on the treatments carried out",
+            "purpose": {
+                "title": "Purpose of the processing",
+                "description": "Manage inquiries made through the inquiry form. Manage your subscription to the Forum/Blog of https://www.elmanicomiotattoo.com/ identified in the registration form. Manage your registration and comments you make in the blog/forum."
+            },
+            "base-legal": {
+                "title": "Legal basis for the processing",
+                "description": "Legitimate interest of https://www.elmanicomiotattoo.com/ to respond to information requests through the Web. Contractual relationship for the provision of the requested service, even if it is free of charge."
+            },
+            "recipients": {
+                "title": "Recipients of the data",
+                "description": "Your data may be transferred to the third-party professionals designated by https://www.elmanicomiotattoo.com/ responsible for attending to your information request. Additional service providers indicated in section 3c will not have access to your personal data. The categories of recipients who may access your personal data are those identified in section 3.c."
+            },
+            "storage-period": {
+                "title": "Retention period of the data",
+                "description": "Until the resolution of your information request. For three years from the last interaction with https://www.elmanicomiotattoo.com/ or until you express your wish not to continue subscribed to the forum/blog (whichever occurs first)"
+            }},
+        "point-5": {
+            "title": "Exercise of your rights",
+            "description": "We inform you that you can exercise the following rights: 1. right of access to your personal data to know which are being processed and the processing operations carried out with them; 2. right to rectification of any inaccurate personal data; 3. right to deletion of your personal data, when this is possible; 4. right to request the limitation of the processing of your personal data when the accuracy, legality or necessity of the processing of the data is doubtful, in which case, we may keep them for the exercise or defense of claims; 5. right to the portability of your personal data, when the legal basis that enables us to process them as indicated in the table above is the contractual relationship or consent; 6. right to object to the processing of your personal data, when the legal basis that enables us to process them as indicated in the table above is the legitimate interest. For these purposes, we will stop processing your data unless we have an overriding legitimate interest or for the formulation, exercise or defense of claims. 7. right to revoke your consent at any time. You can exercise your rights at any time and free of charge by contacting privacy. indicating the right you wish to exercise and your identifying data. If you believe that we have not processed your personal data adequately, you can contact us through privacy. However, we inform you that you have the right to file a complaint with the Spanish Agency for Data Protection if you believe that there has been a violation of data protection legislation regarding the processing of your personal data."
+        },
+        "point-6": {
+            "title": "Cookies",
+            "description": "Manicomio Tatto will only use data storage and retrieval devices (‘Cookies’) when the user has given their prior consent for this in accordance with what is indicated in the pop-up window of the user's browser when they first access the Web and in the other terms and conditions set out in Manicomio Tatto's Cookie Policy that every user must be aware of."
+        },
+        "point-7": {
+            "title": "Security measures",
+            "description": "Manicomio Tatto adopts the security levels required by the GDPR appropriate to the nature of the data being processed at any given time. Notwithstanding the above, technical security on a medium such as the Internet is not impregnable and there may be malicious actions by third parties, although https://www.elmanicomiotattoo.com/ makes every effort to prevent such actions."
+        },
+        "point-8": {
+            "title": "Minors",
+            "description": "Minors may not use the services available through the Web without the prior authorization of their parents, guardians or legal representatives, who will be solely responsible for all acts carried out through the Web by the minors in their charge, including the completion of forms with the personal data of such minors and the marking, where appropriate, of the boxes that accompany them."
+        },
+        "point-9": {
+            "title": "Contact to exercise rights over data privacy",
+            "description": "wordpress@elmanicomiotattoo.com"
+        }
+    },
+    "legal-notice": {
+        "title": "Legal Notice",
+        "description": "This Legal Notice regulates the use of the website of El Manicomio Tattoo. By accessing and using this website, you agree to comply with the terms and conditions established in this Legal Notice.",
+        "intellectual-property": {
+            "title": "Intellectual Property",
+            "description": "All contents of the website, including texts, images, logos and designs, are the property of El Manicomio Tattoo and are protected by intellectual property and copyright laws. The reproduction, distribution or unauthorized use of any content without the express consent of El Manicomio Tattoo is prohibited."
+        },
+        "liability": {
+            "title": "Liability",
+            "description": "El Manicomio Tattoo is not responsible for any damages or losses that may arise from the use of the website, including the information provided therein. The use of the website is at your own risk, and it is recommended to verify the accuracy of the information before making decisions based on it."
+        },
+        "links": {
+            "title": "Links",
+            "description": "The website may contain links to third-party websites. El Manicomio Tattoo is not responsible for the content or privacy policies of such websites. It is recommended to review the terms and conditions of each website before using them."
+        }
+    }
+}
