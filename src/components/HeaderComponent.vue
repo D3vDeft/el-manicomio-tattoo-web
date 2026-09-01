@@ -100,7 +100,7 @@
                 class="flex items-center gap-1 px-2 py-2 rounded-lg hover:bg-white/10 transition font-semibold"
                 @click="changeLanguage" :aria-label="`Cambiar idioma a ${locale === 'es_ES' ? 'inglés' : 'español'}`">
                 <Languages :size="18" />
-                <span>{{ locale === 'es_ES' ? 'ES' : 'EN' }}</span>
+                <span>{{ locale === 'es_ES' ? 'EN' : 'ES' }}</span>
             </button>
 
         </div>
