@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elmanicomiotattoo.es/sitemap.xml
+Host: elmanicomiotattoo.es
+
+# SEO + GEO
+# Ayuda a los motores de búsqueda a indexar la web principal y las páginas legales.

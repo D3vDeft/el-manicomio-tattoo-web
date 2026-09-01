@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TattooParlor",
+  "name": "El Manicomio Tattoo",
+  "image": "https://elmanicomiotattoo.es/og-image.svg",
+  "url": "https://elmanicomiotattoo.es",
+  "telephone": "+34 674 444 826",
+  "email": "hola@elmanicomiotattoo.es",
+  "priceRange": "€€",
+  "description": "Estudio de tatuajes en Madrid especializado en tatuajes personalizados, blackwork, realismo, lettering, piercing y body art.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Chamberí",
+    "addressLocality": "Madrid",
+    "addressRegion": "Madrid",
+    "postalCode": "28014",
+    "addressCountry": "ES"
+  },
+  "areaServed": "Madrid",
+  "sameAs": [
+    "https://www.instagram.com/elmanicomiotattoo/",
+    "https://www.tiktok.com/@elmanicomiotattoo"
+  ],
+  "openingHours": ["Mo-Fr 11:00-20:00", "Sa 11:00-18:00"]
+}
