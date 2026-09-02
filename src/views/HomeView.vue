@@ -49,40 +49,51 @@
                     </p>
 
                     <h1 class="font-display text-6xl leading-tight text-white mb-10 drop-shadow-lg">
-                        {{ $t('home.title') }}
-                        <br>
-
-                        <span class="text-white/90">
-                            {{ $t('home.subtitle') }}
-                        </span>
+                        {{ $t('home.hero.title') }}
                     </h1>
 
                     <div class="max-w-3xl mx-auto space-y-6 text-white text-xl leading-8 drop-shadow-md">
 
                         <p>
-                            {{ $t('home.description-start') }}
-                            <strong>
-                                El Manicomio Tattoo
-                            </strong>
-                            {{ $t('home.description-end') }}
+                            {{ $t('home.hero.paragraph-1') }}
                         </p>
 
                         <p>
-                            {{ $t('home.about-start') }}
-                            <strong>
-                                {{ $t('home.about-black') }}
-                            </strong>,
-                            {{ $t('home.about-end') }}
+                            {{ $t('home.hero.paragraph-2') }}
                         </p>
 
                         <p>
-                            {{ $t('home.about-studio-start') }}
-                            <strong>
-                                {{ $t('home.about-studio-black') }}
-                            </strong>
-                            {{ $t('home.about-studio-end') }}
+                            {{ $t('home.hero.paragraph-3') }}
                         </p>
 
+                        <p>
+                            {{ $t('home.hero.paragraph-4') }}
+                        </p>
+
+                    </div>
+
+                    <div class="mt-12 grid gap-6 text-left md:grid-cols-3 max-w-5xl mx-auto">
+                        <div class="border border-white/20 bg-white/5 p-6 backdrop-blur-sm">
+                            <h2 class="text-2xl font-semibold mb-3 text-white">{{ $t('home.hero.cards.card-1.title') }}
+                            </h2>
+                            <p class="text-white/75 leading-7">
+                                {{ $t('home.hero.cards.card-1.description') }}
+                            </p>
+                        </div>
+                        <div class="border border-white/20 bg-white/5 p-6 backdrop-blur-sm">
+                            <h2 class="text-2xl font-semibold mb-3 text-white">{{ $t('home.hero.cards.card-2.title') }}
+                            </h2>
+                            <p class="text-white/75 leading-7">
+                                {{ $t('home.hero.cards.card-2.description') }}
+                            </p>
+                        </div>
+                        <div class="border border-white/20 bg-white/5 p-6 backdrop-blur-sm">
+                            <h2 class="text-2xl font-semibold mb-3 text-white">{{ $t('home.hero.cards.card-3.title') }}
+                            </h2>
+                            <p class="text-white/75 leading-7">
+                                {{ $t('home.hero.cards.card-3.description') }}
+                            </p>
+                        </div>
                     </div>
 
                     <a :href="`https://wa.me/34674444826?text=${encodeURIComponent($t('whatsapp-message.text'))}`"

@@ -3,6 +3,27 @@
     "section-name": "Inicio",
     "title": "Tatuajes con personalidad.",
     "subtitle": "Diseñados para ti.",
+    "hero": {
+      "title": "Tatuajes, piercing y body art en Madrid | El Manicomio Tattoo",
+      "paragraph-1": "En El Manicomio Tattoo diseñamos tatuajes personalizados para quienes buscan un estilo único, limpio y con personalidad. Nuestro estudio en Madrid combina creatividad, técnica y atención cercana para ayudarte a materializar cada idea con precisión, desde pequeños diseños hasta piezas grandes y complejas.",
+      "paragraph-2": "Somos especialistas en tatuajes blackwork, realismo, lettering, minimalista y trabajos a medida, adaptados a tu historia y a tu forma de expresarte. Cada proyecto se trabaja con un enfoque personal, cuidando los detalles para que el resultado final tenga sentido, equilibrio y una identidad propia.",
+      "paragraph-3": "Además del tatuaje, también ofrecemos piercing, tooth gems y body art con protocolos de higiene, materiales seguros y asesoramiento honesto. Si buscas un estudio de tatuajes en Chamberí, Madrid, con estilo, experiencia y trato profesional, aquí encontrarás un espacio pensado para crear arte que te acompañe toda la vida.",
+      "paragraph-4": "Desde la primera consulta hasta la entrega final, trabajamos para que cada experiencia sea clara, segura y totalmente adaptada a ti. Nuestro objetivo es que te sientas cómodo, escuchado y orgulloso del resultado final.",
+      "cards": {
+        "card-1": {
+          "title": "Tatuajes personalizados",
+          "description": "Diseños pensados para ti, desde ilustración simbólica hasta piezas con gran impacto visual y significado."
+        },
+        "card-2": {
+          "title": "Piercing y body art",
+          "description": "Atención segura, materiales adecuados y asesoramiento para que el proceso sea cómodo y bien guiado."
+        },
+        "card-3": {
+          "title": "Estudio en Madrid",
+          "description": "Ubicado en Chamberí para facilitar tu visita, con un ambiente profesional y un cuidado especial en cada detalle."
+        }
+      }
+    },
     "description-start": "En",
     "description-end": "convertimos ideas, historias y emociones en piezas que llevas contigo para siempre.",
     "about-start": "Somos un",
@@ -32,23 +53,113 @@
   },
   "tattoos": {
     "section-name": "Tatuajes",
-    "title": "Seccion de tatuajes"
+    "title": "Tatuajes personalizados en Madrid",
+    "intro": "Creamos tatuajes a medida para personas que quieren llevar una pieza con identidad, significado y calidad artística. En El Manicomio Tattoo trabajamos cada diseño con atención a los detalles, la estética y la comodidad del proceso.",
+    "paragraph-1": "Desde piezas minimalistas hasta trabajos más complejos, cada tatuaje se diseña con una visión clara: que encaje con tu estilo, con tu cuerpo y con el significado que quieres transmitir.",
+    "paragraph-2": "Nuestro estudio en Chamberí combina el arte del tatuaje con una atención cercana y profesional para que la experiencia sea cómoda desde la primera consulta hasta la entrega final.",
+    "cta": "Reserva tu cita",
+    "features": {
+      "one": {
+        "title": "Diseños a medida",
+        "text": "Trabajamos con tus referencias, tus ideas y tu estilo para crear una pieza que realmente te represente."
+      },
+      "two": {
+        "title": "Estilos diversos",
+        "text": "Blackwork, realismo, lettering, minimalista, ornamental y piezas totalmente personalizadas."
+      },
+      "three": {
+        "title": "Atención profesional",
+        "text": "Te acompañamos con criterio, higiene y un proceso claro para que te sientas seguro en cada paso."
+      }
+    }
   },
   "piercings": {
     "section-name": "Piercings",
-    "title": "Seccion de piercins"
+    "title": "Piercings en Madrid",
+    "intro": "En El Manicomio Tattoo ofrecemos piercings con materiales seguros, asesoramiento claro y una ejecución cuidadosa para que cada procedimiento sea cómodo y bien guiado.",
+    "paragraph-1": "Desde perforaciones de forma clásica hasta piezas más personales, cada intervención se realiza con atención a la anatomía, la zona de colocación y el estilo que buscas.",
+    "paragraph-2": "Nos gusta que te sientas informado antes, durante y después del proceso. Por eso valoramos tus dudas, te explicamos las opciones y cuidamos cada detalle para una experiencia segura.",
+    "cta": "Pregunta por tu piercing",
+    "features": {
+      "one": {
+        "title": "Materiales seguros",
+        "text": "Trabajamos con materiales de calidad y protocolos adecuados para cada tipo de perforación."
+      },
+      "two": {
+        "title": "Asesoramiento personal",
+        "text": "Te ayudamos a elegir la zona, el estilo y el tipo de pieza que mejor encaja contigo."
+      },
+      "three": {
+        "title": "Cuidado post-proceso",
+        "text": "Te explicamos cómo cuidar tu piercing para que la recuperación sea lo más tranquila posible."
+      }
+    }
   },
   "jewelers": {
     "section-name": "Joyería",
-    "title": "Seccion de joyería"
+    "title": "Joyería y accesorios para tu estilo",
+    "intro": "Descubre piezas pensadas para complementar tu imagen con detalles que aportan personalidad, estilo y una estética original.",
+    "paragraph-1": "Nuestra selección combina diseño moderno, materiales cuidados y propuestas versátiles para diferentes looks, desde piezas más minimalistas hasta alternativas más impactantes.",
+    "paragraph-2": "Si buscas accesorios para reforzar tu estilo personal o para completar tu identidad visual, aquí encontrarás opciones pensadas para disfrutar cada día.",
+    "cta": "Ver accesorios",
+    "features": {
+      "one": {
+        "title": "Piezas con estilo",
+        "text": "Diseños que buscan aportar carácter y versatilidad a tu día a día."
+      },
+      "two": {
+        "title": "Calidad y detalle",
+        "text": "Elegimos materiales y acabados para que cada pieza se vea cuidada y duradera."
+      },
+      "three": {
+        "title": "Complementa tu imagen",
+        "text": "Ideales para aportar ese toque personal que hace que cada look sea único."
+      }
+    }
   },
   "tooth-gems": {
     "section-name": "Gemas Dentales",
-    "title": "Seccion de Gemas Dentales"
+    "title": "Tooth gems en Madrid",
+    "intro": "Las tooth gems son una forma discreta y original de darle un detalle único a tu sonrisa. En El Manicomio Tattoo te guiamos para elegir la opción que mejor se adapta a ti.",
+    "paragraph-1": "Esta técnica permite añadir brillo y personalidad con un acabado cuidado y un tratamiento pensado para que la experiencia sea segura y estética.",
+    "paragraph-2": "Te orientamos sobre estilo, materiales y cuidado para que cada pieza se vea bonita y se mantenga en buenas condiciones durante el tiempo adecuado.",
+    "cta": "Consulta tus opciones",
+    "features": {
+      "one": {
+        "title": "Look personal",
+        "text": "Añade un detalle moderno y visual que refleja tu personalidad de forma original."
+      },
+      "two": {
+        "title": "Ejecución cuidadosa",
+        "text": "Trabajamos con precisión para un acabado limpio, visible y bien integrado en tu sonrisa."
+      },
+      "three": {
+        "title": "Cuidado posterior",
+        "text": "Te explicamos cómo mantener la pieza para conservar su aspecto y evitar molestias."
+      }
+    }
   },
   "self-care": {
     "section-name": "Cuidados",
-    "title": "Seccion de cuidados"
+    "title": "Cuidado y bienestar para tu piel",
+    "intro": "El cuidado posterior es clave para mantener un tatuaje o una perforación en perfecto estado. Te orientamos para que cuides bien tu piel y prolongues el resultado.",
+    "paragraph-1": "Cada proceso merece atención, desde la limpieza adecuada hasta la hidratación y las recomendaciones diarias que ayudan a cuidar la zona tratada.",
+    "paragraph-2": "En El Manicomio Tattoo entendemos que la salud de la piel y la permanencia del trabajo son igual de importantes que el diseño que eliges.",
+    "cta": "Pide asesoramiento",
+    "features": {
+      "one": {
+        "title": "Consejos prácticos",
+        "text": "Te damos pautas sencillas para cuidar la zona durante el proceso de cicatrización."
+      },
+      "two": {
+        "title": "Piel y detalle",
+        "text": "Cuidamos que la piel se mantenga en buenas condiciones para preservar el resultado final."
+      },
+      "three": {
+        "title": "Seguimiento claro",
+        "text": "Si tienes dudas, te orientamos con respuestas honestas y útiles para cada caso."
+      }
+    }
   },
   "contact": {
     "section-name": "Contacto",

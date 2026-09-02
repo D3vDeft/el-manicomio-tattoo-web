@@ -3,6 +3,27 @@
     "section-name": "Home",
     "title": "Tattoos with personality.",
     "subtitle": "Designed for you.",
+    "hero": {
+      "title": "Tattoos, piercing and body art in Madrid | El Manicomio Tattoo",
+      "paragraph-1": "At El Manicomio Tattoo we design custom tattoos for those looking for a unique, clean and personal style. Our studio in Madrid combines creativity, technique and close attention to help you bring each idea to life with precision, from small designs to large and complex pieces.",
+      "paragraph-2": "We specialize in blackwork, realism, lettering, minimalist tattoos and bespoke work, adapted to your story and the way you express yourself. Each project is developed with a personal approach, taking care of every detail so the final result has meaning, balance and its own identity.",
+      "paragraph-3": "In addition to tattoos, we also offer piercing, tooth gems and body art with hygiene protocols, safe materials and honest advice. If you are looking for a tattoo studio in Chamberí, Madrid, with style, experience and professional treatment, you will find the right place here to create art that will accompany you for life.",
+      "paragraph-4": "From the first consultation to the final delivery, we work so that each experience is clear, safe and fully tailored to you. Our goal is for you to feel comfortable, heard and proud of the final result.",
+      "cards": {
+        "card-1": {
+          "title": "Custom Tattoos",
+          "description": "Designs created just for you, ranging from symbolic illustrations to pieces with strong visual impact and meaning."
+        },
+        "card-2": {
+          "title": "Piercings and body art",
+          "description": "Safe care, appropriate materials, and guidance to ensure the process is comfortable and well-managed."
+        },
+        "card-3": {
+          "title": "Studio in Madrid",
+          "description": "Located in Chamberí for your convenience, with a professional atmosphere and special attention to every detail."
+        }
+      }
+    },
     "description-start": "At",
     "description-end": "we turn ideas, stories, and emotions into pieces you carry with you forever.",
     "about-start": "We are a",
@@ -32,23 +53,113 @@
   },
   "tattoos": {
     "section-name": "Tattoos",
-    "title": "Tattoos Section"
+    "title": "Custom tattoos in Madrid",
+    "intro": "We create tattoos designed to reflect your personality, your story and your style. At El Manicomio Tattoo, every design is thought through with attention to detail, aesthetics and comfort throughout the process.",
+    "paragraph-1": "From minimalist pieces to more complex projects, each tattoo is designed with a clear goal: to fit your style, your body and the meaning you want to express.",
+    "paragraph-2": "Our studio in Chamberí combines tattoo artistry with close, professional care so your experience feels comfortable from the first consultation to the final result.",
+    "cta": "Book your appointment",
+    "features": {
+      "one": {
+        "title": "Custom designs",
+        "text": "We work from your references, ideas and style to create a tattoo that truly represents you."
+      },
+      "two": {
+        "title": "Multiple styles",
+        "text": "Blackwork, realism, lettering, minimalism, ornamental art and fully customized pieces."
+      },
+      "three": {
+        "title": "Professional care",
+        "text": "We guide you with hygiene, clarity and support so you feel confident throughout the process."
+      }
+    }
   },
   "piercings": {
     "section-name": "Piercings",
-    "title": "Piercins Section"
+    "title": "Piercings in Madrid",
+    "intro": "At El Manicomio Tattoo we offer piercings with safe materials, clear advice and careful execution so each procedure feels comfortable and well guided.",
+    "paragraph-1": "From classic placements to more personal choices, each procedure is carried out with attention to anatomy, placement and the style you want to express.",
+    "paragraph-2": "We want you to feel informed before, during and after the process. We listen to your doubts, explain your options and take care of every detail so your experience is safe and confident.",
+    "cta": "Ask about your piercing",
+    "features": {
+      "one": {
+        "title": "Safe materials",
+        "text": "We work with quality materials and suitable protocols for each type of piercing."
+      },
+      "two": {
+        "title": "Personal guidance",
+        "text": "We help you choose the area, style and type of piece that best suits you."
+      },
+      "three": {
+        "title": "Aftercare",
+        "text": "We explain how to care for your piercing so recovery is as smooth and comfortable as possible."
+      }
+    }
   },
   "jewelers": {
     "section-name": "Jewelers",
-    "title": "Jewelers Section"
+    "title": "Jewelry and accessories for your style",
+    "intro": "Discover pieces designed to complement your look with details that bring personality, style and a distinctive identity.",
+    "paragraph-1": "Our selection combines modern design, careful materials and versatile proposals for different aesthetics, from minimal pieces to more striking options.",
+    "paragraph-2": "If you are looking for accessories that reinforce your personal style or complete your visual identity, you will find options designed to be enjoyed every day.",
+    "cta": "View accessories",
+    "features": {
+      "one": {
+        "title": "Styled pieces",
+        "text": "Designs aimed at adding character and versatility to your everyday look."
+      },
+      "two": {
+        "title": "Quality and detail",
+        "text": "We choose materials and finishes that ensure a polished and durable result."
+      },
+      "three": {
+        "title": "Complete your image",
+        "text": "Perfect for adding that personal touch that makes each look unique."
+      }
+    }
   },
   "tooth-gems": {
     "section-name": "Tooth Gems",
-    "title": "Tooth Gems Section"
+    "title": "Tooth gems in Madrid",
+    "intro": "Tooth gems are a subtle and original way to add a unique detail to your smile. At El Manicomio Tattoo we guide you to choose the option that best fits you.",
+    "paragraph-1": "This technique allows you to add shine and personality with a refined finish and a treatment designed to keep the experience safe and aesthetically pleasing.",
+    "paragraph-2": "We guide you on style, materials and aftercare so each piece looks beautiful and stays in good condition for the appropriate time.",
+    "cta": "Ask about your options",
+    "features": {
+      "one": {
+        "title": "Personal look",
+        "text": "Add a modern, visual detail that reflects your personality in a creative way."
+      },
+      "two": {
+        "title": "Careful application",
+        "text": "We work with precision to create a clean, visible and well-integrated finish."
+      },
+      "three": {
+        "title": "Aftercare",
+        "text": "We explain how to maintain the piece so it keeps its appearance and remains comfortable."
+      }
+    }
   },
   "self-care": {
     "section-name": "Self Care",
-    "title": "Self Care Section"
+    "title": "Care and wellbeing for your skin",
+    "intro": "Aftercare is essential for keeping a tattoo or piercing in perfect condition. We guide you so you can care for your skin properly and preserve the final result.",
+    "paragraph-1": "Every process deserves attention, from proper cleaning to hydration and daily recommendations that help protect the treated area.",
+    "paragraph-2": "At El Manicomio Tattoo we understand that the health of your skin and the longevity of the work are just as important as the design you choose.",
+    "cta": "Ask for advice",
+    "features": {
+      "one": {
+        "title": "Practical advice",
+        "text": "We give you simple guidelines to care for the area during the healing process."
+      },
+      "two": {
+        "title": "Skin and detail",
+        "text": "We care for your skin so the final result remains clear and long-lasting."
+      },
+      "three": {
+        "title": "Clear guidance",
+        "text": "If you have doubts, we help with honest, practical answers for each case."
+      }
+    }
   },
   "contact": {
     "section-name": "Contact",
