@@ -1,3 +1,11 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+import { Camera, Music2 } from '@lucide/vue'
+import logoLetter from '../assets/logo-letter.webp'
+
+const videoError = ref(false)
+</script>
+
 <template>
     <div class="text-white overflow-hidden">
 
@@ -8,10 +16,20 @@
         <section class="relative w-full h-[calc(100vh-140px)] overflow-hidden">
 
             <!-- Vídeo -->
-            <video autoplay muted loop playsinline preload="metadata" crossorigin="anonymous"
+            <video 
+                v-if="!videoError"
+                autoplay 
+                muted 
+                loop 
+                playsinline 
+                preload="metadata" 
+                @error="videoError = true"
                 class="absolute inset-0 w-full h-full object-cover">
                 <source src="https://elmanicomiotattoo.es/wp-content/uploads/2025/07/vidFondo-1.mp4" type="video/mp4">
             </video>
+
+            <!-- Fondo alternativo si el video falla -->
+            <div v-if="videoError" class="absolute inset-0 w-full h-full object-cover bg-black"></div>
 
             <!-- Oscurecimiento -->
             <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-black/80"></div>
@@ -19,7 +37,9 @@
             <!-- Logo -->
             <div class="absolute inset-x-0 bottom-0 z-10 flex flex-col items-center text-center pb-12 md:pb-16 px-6">
 
-                <img src="../assets/logo-letter.webp" alt="El Manicomio Tattoo"
+                <img 
+                    :src="logoLetter" 
+                    alt="El Manicomio Tattoo"
                     class="w-64 md:w-80 lg:w-[420px] drop-shadow-2xl">
 
                 <p class="mt-5 text-sm md:text-base tracking-[0.35em] uppercase text-white font-medium drop-shadow-lg">
@@ -381,12 +401,6 @@
 
     </div>
 </template>
-
-
-<script setup lang="ts">
-import { Camera, Music2 } from '@lucide/vue'
-</script>
-
 
 <style scoped>
 .animate-marquee {
