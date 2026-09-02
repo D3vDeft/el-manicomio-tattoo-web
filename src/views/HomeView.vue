@@ -8,7 +8,7 @@
         <section class="relative w-full h-[calc(100vh-140px)] overflow-hidden">
 
             <!-- Vídeo -->
-            <video autoplay muted loop playsinline preload="metadata"
+            <video autoplay muted loop playsinline preload="metadata" crossorigin="anonymous"
                 class="absolute inset-0 w-full h-full object-cover">
                 <source src="https://elmanicomiotattoo.es/wp-content/uploads/2025/07/vidFondo-1.mp4" type="video/mp4">
             </video>
