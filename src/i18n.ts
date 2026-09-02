@@ -4,18 +4,11 @@ import english from './locales/en_EN.json';
 
 const i18n = createI18n({
   locale: detectLanguage(),
-  fallbackLocale: 'es_ES',
+  fallbackLocale: 'en_EN',
   messages: { es_ES: spanish, en_EN: english },
 });
 
 function detectLanguage(): 'es_ES' | 'en_EN' {
-  if (typeof window !== 'undefined') {
-    const stored = window.localStorage.getItem('user-locale');
-    if (stored === 'es_ES' || stored === 'en_EN') {
-      return stored;
-    }
-  }
-
   const languages = navigator.languages?.length ? navigator.languages : [navigator.language];
 
   for (const language of languages) {
