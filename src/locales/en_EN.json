@@ -163,11 +163,35 @@
   },
   "contact": {
     "section-name": "Contact",
-    "title": "Contact Section"
+    "title": "Contact El Manicomio Tattoo in Madrid",
+    "intro": "Do you have an idea for a tattoo, piercing or a question? We're here to listen. Get in touch with our team via WhatsApp, phone or by visiting our studio in Chamberí, Madrid.",
+    "location-heading": "Where we are",
+    "location-text": "Our studio is located in the heart of Chamberí, Madrid. Easy to access and with a professional and welcoming atmosphere.",
+    "location-address": "Chamberí, Madrid",
+    "hours-heading": "Hours",
+    "hours-text": "Open Tuesday to Saturday. Check our exact hours by writing to us on WhatsApp or calling.",
+    "methods-heading": "Ways to contact us",
+    "method-whatsapp": "WhatsApp",
+    "method-whatsapp-text": "Message us and tell us your idea. We'll respond quickly to schedule your appointment.",
+    "method-phone": "Phone",
+    "method-phone-text": "Call to speak directly with our team and get answers right away.",
+    "method-visit": "Visit the studio",
+    "method-visit-text": "Come see us in person and experience our space. We're always available.",
+    "cta": "Contact us via WhatsApp",
+    "closing": "Whether it's your first tattoo, a piercing or a care consultation: here you'll find honest, professional and personalized attention."
   },
   "promo": {
-    "section-name": "Promo",
-    "title": "Promo Section"
+    "section-name": "Promotions",
+    "title": "Promotions and offers at El Manicomio Tattoo",
+    "intro": "Stay tuned for our special promotions. We offer discounts, packages and exclusive offers so you can enjoy body art at competitive prices.",
+    "heading-current": "Current promotions",
+    "text-current": "Follow our social media (Instagram and TikTok) to stay updated on the latest offers, seasonal discounts and special packages.",
+    "heading-loyalty": "Returning customers",
+    "text-loyalty": "If you've already visited El Manicomio Tattoo, we have exclusive surprises and discounts for you. Ask on your next visit or contact us via WhatsApp.",
+    "heading-groups": "Groups and events",
+    "text-groups": "Want a group session or tattoos for a special event? Check out our personalized service options.",
+    "cta": "Follow us on social media",
+    "closing": "We want you to feel part of El Manicomio Tattoo. That's why we're always looking for ways to offer you the best experience and price."
   },
   "footer": {
     "legal": "Legal",

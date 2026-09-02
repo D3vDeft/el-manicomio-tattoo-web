@@ -163,11 +163,35 @@
   },
   "contact": {
     "section-name": "Contacto",
-    "title": "Seccion de Contacto"
+    "title": "Contacta con El Manicomio Tattoo en Madrid",
+    "intro": "¿Tienes una idea para un tatuaje, piercing o alguna consulta? Estamos aquí para escucharte. Ponte en contacto con nuestro equipo a través de WhatsApp, teléfono o visitando directamente nuestro estudio en Chamberí, Madrid.",
+    "location-heading": "Dónde estamos",
+    "location-text": "Nuestro estudio se encuentra en el corazón de Chamberí, en Madrid. Es fácil acceder y contamos con un ambiente profesional y cálido para recibirte.",
+    "location-address": "Chamberí, Madrid",
+    "hours-heading": "Horarios",
+    "hours-text": "Abierto de martes a sábado. Consulta nuestros horarios exactos escribiendo por WhatsApp o llamando.",
+    "methods-heading": "Formas de contacto",
+    "method-whatsapp": "WhatsApp",
+    "method-whatsapp-text": "Escribe y cuéntanos tu idea. Responderemos rápidamente para agendar tu cita.",
+    "method-phone": "Teléfono",
+    "method-phone-text": "Llama para hablar directamente con nuestro equipo y resolver dudas al momento.",
+    "method-visit": "Visita el estudio",
+    "method-visit-text": "Ven a vernos en persona y conoce nuestro espacio. Siempre estamos disponibles.",
+    "cta": "Contacta ahora por WhatsApp",
+    "closing": "No importa si es tu primer tatuaje, un piercing o una consulta de cuidado: aquí encontrarás atención honesta, profesional y adaptada a ti."
   },
   "promo": {
-    "section-name": "Promo",
-    "title": "Seccion de promociones"
+    "section-name": "Promociones",
+    "title": "Promociones y ofertas en El Manicomio Tattoo",
+    "intro": "Mantente atento a nuestras promociones especiales. Ofrecemos descuentos, paquetes y ofertas exclusivas para que disfrutes del body art con precios competitivos.",
+    "heading-current": "Promociones actuales",
+    "text-current": "Sigue nuestras redes sociales (Instagram y TikTok) para conocer las últimas ofertas, descuentos de temporada y paquetes especiales.",
+    "heading-loyalty": "Clientes recurrentes",
+    "text-loyalty": "Si ya has visitado El Manicomio Tattoo, tenemos sorpresas y descuentos exclusivos para ti. Pregunta en tu próxima visita o contacta por WhatsApp.",
+    "heading-groups": "Grupos y eventos",
+    "text-groups": "¿Quieres una sesión de grupo o tatuajes para un evento especial? Consulta nuestras opciones de atención personalizada.",
+    "cta": "Síguenos en redes sociales",
+    "closing": "Queremos que te sientas parte de El Manicomio Tattoo. Por eso, siempre buscamos formas de ofrecerte la mejor experiencia y precio posible."
   },
   "footer": {
     "legal": "Legal",
