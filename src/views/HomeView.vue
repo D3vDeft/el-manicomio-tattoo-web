@@ -12,29 +12,20 @@
                 class="absolute inset-0 w-full h-full object-cover">
                 <source src="https://elmanicomiotattoo.es/wp-content/uploads/2025/07/vidFondo-1.mp4" type="video/mp4">
             </video>
-
             <!-- Oscurecimiento -->
             <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-black/80"></div>
-
             <!-- Logo -->
             <div class="absolute inset-x-0 bottom-0 z-10 flex flex-col items-center text-center pb-12 md:pb-16 px-6">
-
                 <img src="../assets/logo-letter.webp" alt="El Manicomio Tattoo"
                     class="w-64 md:w-80 lg:w-[420px] drop-shadow-2xl">
-
                 <p class="mt-5 text-sm md:text-base tracking-[0.35em] uppercase text-white font-medium drop-shadow-lg">
                     Tattoo · Piercing · Body Art
                 </p>
-
             </div>
-
         </section>
-
-
         <!-- ========================================== -->
         <!-- PRESENTACIÓN -->
         <!-- ========================================== -->
-
         <section class="relative py-24 md:py-32">
 
             <!-- Solo contraste, NO es una tarjeta -->
@@ -43,71 +34,58 @@
             <div class="relative z-10 max-w-5xl mx-auto px-6">
 
                 <div class="text-center">
-
                     <p class="uppercase tracking-[0.35em] text-xl md:text-sm text-white/60 mb-5">
                         El Manicomio Tattoo
                     </p>
-
                     <h1 class="font-display text-6xl leading-tight text-white mb-10 drop-shadow-lg">
                         {{ $t('home.hero.title') }}
                     </h1>
-
                     <div class="max-w-3xl mx-auto space-y-6 text-white text-xl leading-8 drop-shadow-md">
-
                         <p>
                             {{ $t('home.hero.paragraph-1') }}
                         </p>
-
                         <p>
                             {{ $t('home.hero.paragraph-2') }}
                         </p>
-
                         <p>
                             {{ $t('home.hero.paragraph-3') }}
                         </p>
-
                         <p>
                             {{ $t('home.hero.paragraph-4') }}
                         </p>
-
                     </div>
-
                     <div class="mt-12 grid gap-6 text-left md:grid-cols-3 max-w-5xl mx-auto">
-                        <div class="border border-white/20 bg-white/5 p-6 backdrop-blur-sm">
+                        <RouterLink to="/tattoos" class="border border-white/20 bg-white/5 p-6 backdrop-blur-sm">
                             <h2 class="text-2xl font-semibold mb-3 text-white">{{ $t('home.hero.cards.card-1.title') }}
                             </h2>
                             <p class="text-white/75 leading-7">
                                 {{ $t('home.hero.cards.card-1.description') }}
                             </p>
-                        </div>
-                        <div class="border border-white/20 bg-white/5 p-6 backdrop-blur-sm">
+                        </RouterLink>
+                        <RouterLink to="/piercings" class="border border-white/20 bg-white/5 p-6 backdrop-blur-sm">
                             <h2 class="text-2xl font-semibold mb-3 text-white">{{ $t('home.hero.cards.card-2.title') }}
                             </h2>
                             <p class="text-white/75 leading-7">
                                 {{ $t('home.hero.cards.card-2.description') }}
                             </p>
-                        </div>
-                        <div class="border border-white/20 bg-white/5 p-6 backdrop-blur-sm">
+                        </RouterLink>
+                        <a href="https://www.google.com/maps/search/?api=1&query=El+Manicomio+Tattoo+%26+Piercing+Madrid"
+                            class="border border-white/20 bg-white/5 p-6 backdrop-blur-sm">
                             <h2 class="text-2xl font-semibold mb-3 text-white">{{ $t('home.hero.cards.card-3.title') }}
                             </h2>
                             <p class="text-white/75 leading-7">
                                 {{ $t('home.hero.cards.card-3.description') }}
                             </p>
-                        </div>
+                        </a>
                     </div>
-
                     <a :href="`https://wa.me/34674444826?text=${encodeURIComponent($t('whatsapp-message.text'))}`"
                         target="_blank" rel="noopener noreferrer"
                         class="inline-flex mt-10 border border-white/60 hover:border-white hover:bg-white hover:text-black px-11 py-7 uppercase tracking-[0.2em] text-xl font-medium transition-all duration-300">
                         {{ $t('home.contact-init') }}
                     </a>
-
                 </div>
-
             </div>
-
         </section>
-
 
         <!-- ========================================== -->
         <!-- LÍNEA DIVISORIA -->
@@ -117,17 +95,13 @@
             <div class="border-t border-white/20"></div>
         </div>
 
-
         <!-- ========================================== -->
         <!-- PORTFOLIO -->
         <!-- ========================================== -->
         <section class="relative py-24 md:py-32">
-
             <div class="relative z-10">
-
                 <!-- Cabecera -->
                 <div class="max-w-7xl mx-auto px-6 mb-12">
-
                     <p class="uppercase tracking-[0.35em] text-xl text-white/60 mb-4">
                         {{ $t('home.portfolio.section-name') }}
                     </p>
@@ -135,7 +109,6 @@
                     <h2 class="font-display text-6xl text-white">
                         {{ $t('home.portfolio.title') }}
                     </h2>
-
                     <p class="text-white/70 max-w-xl mt-5 leading-7 text-2xl">
                         {{ $t('home.portfolio.description') }}
                     </p>
