@@ -7,11 +7,11 @@
                 <source src="https://elmanicomiotattoo.es/wp-content/uploads/2025/07/vidFondo-1.mp4" type="video/mp4">
             </video>
 
-            <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-black/80"></div>
+            <div class="absolute inset-0 bg-linear-to-b from-black/10 via-black/20 to-black/80"></div>
 
             <div class="absolute inset-x-0 bottom-0 z-10 flex flex-col items-center text-center pb-12 md:pb-16 px-6">
                 <img src="../assets/logo-letter.webp" alt="El Manicomio Tattoo"
-                    class="w-64 md:w-80 lg:w-[420px] drop-shadow-2xl">
+                    class="w-64 md:w-80 lg:w-105 drop-shadow-2xl">
                 <p class="mt-5 text-sm md:text-base tracking-[0.35em] uppercase text-white font-medium drop-shadow-lg">
                     Tattoo · Piercing · Body Art
                 </p>
@@ -122,21 +122,20 @@
                 <!-- CINTA INFINITA -->
                 <div class="relative w-full overflow-hidden">
                     <div
-                        class="absolute left-0 top-0 bottom-0 w-16 md:w-32 z-10 bg-gradient-to-r from-black/40 to-transparent pointer-events-none">
+                        class="absolute left-0 top-0 bottom-0 w-16 md:w-32 z-10 bg-linear-to-r from-black/40 to-transparent pointer-events-none">
                     </div>
                     <div
-                        class="absolute right-0 top-0 bottom-0 w-16 md:w-32 z-10 bg-gradient-to-l from-black/40 to-transparent pointer-events-none">
+                        class="absolute right-0 top-0 bottom-0 w-16 md:w-32 z-10 bg-linear-to-l from-black/40 to-transparent pointer-events-none">
                     </div>
 
                     <div class="flex w-max animate-marquee" :class="{ 'marquee-paused': selectedImage !== null }">
                         <div v-for="group in 2" :key="group" class="flex gap-5 pr-5"
                             :aria-hidden="group === 2 ? 'true' : undefined">
                             <button v-for="(image, index) in images" :key="`${group}-${image.src}`" type="button"
-                                class="shrink-0 cursor-zoom-in focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+                                class="shrink-0 cursor-zoom-in focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
                                 :aria-label="`Ampliar imagen ${index + 1}`" @click="openImage(index)">
                                 <img :src="image.src" :alt="image.alt"
-                                    class="w-[250px] md:w-[300px] lg:w-[340px] h-[420px] md:h-[480px] object-cover"
-                                    loading="lazy">
+                                    class="w-62.5 md:w-75 lg:w-85 h-105 md:h-120 object-cover" loading="lazy">
                             </button>
                         </div>
                     </div>
@@ -218,7 +217,7 @@
                         target="_blank" rel="noopener noreferrer" class="block overflow-hidden shadow-2xl">
                         <iframe
                             src="https://www.google.com/maps?q=Calle%20de%20Gaztambide%2026%2C%20Madrid&output=embed"
-                            title="Mapa de El Manicomio Tattoo" class="w-full h-[400px] border-0 pointer-events-none"
+                            title="Mapa de El Manicomio Tattoo" class="w-full h-100 border-0 pointer-events-none"
                             loading="lazy"></iframe>
                     </a>
                 </div>
@@ -238,7 +237,7 @@
                     &#10094;
                 </button>
 
-                <img :src="images[selectedImage].src" :alt="images[selectedImage].alt" class="lightbox-image">
+                <img :src="currentImage?.src" :alt="currentImage?.alt" class="lightbox-image">
 
                 <button type="button" class="lightbox-nav lightbox-next" aria-label="Imagen siguiente"
                     @click="changeImage(1)">
@@ -250,7 +249,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { Camera, Music2 } from '@lucide/vue'
 
 const images = [
@@ -273,6 +272,10 @@ const images = [
 ]
 
 const selectedImage = ref<number | null>(null)
+const currentImage = computed(() => {
+    if (selectedImage.value === null) return null
+    return images[selectedImage.value] ?? null
+})
 let previousOverflow = ''
 
 function openImage(index: number) {

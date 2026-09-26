@@ -209,6 +209,17 @@ const changeLanguage = (): void => {
 @import '../assets/main.css';
 
 .mobile-link {
-    @apply flex items-center gap-3 px-4 py-3 rounded-lg text-gray-200 hover:bg-white/10 hover:text-white transition-colors;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    color: rgb(229 231 235);
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.mobile-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
 }
 </style>
