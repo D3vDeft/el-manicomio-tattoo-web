@@ -2,8 +2,9 @@
     <div class="relative flex flex-col min-h-screen">
 
         <!-- Fondo -->
-        <div class="absolute inset-0 bg-[url('../assets/background.jpg')] bg-repeat blur-xs"></div>
-        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="absolute inset-0 bg-[url('../assets/background.jpg')] bg-cover">
+        </div>
+        <div class="absolute inset-0 bg-black/40"></div>
 
         <!-- Contenido -->
         <div class="relative flex flex-col min-h-screen">

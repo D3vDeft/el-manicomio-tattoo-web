@@ -16,19 +16,19 @@
                 </h3>
 
                 <RouterLink to="/cookie-policy"
-                    class="flex items-center gap-2 text-orange-400 lg:text-gray-200 lg:hover:text-orange-400 transition-colors">
+                    class="flex items-center gap-2 text-gray-200 lg:hover:text-orange-400 transition-colors">
                     <Cookie :size="18" />
                     <span>{{ $t('footer.cookie-policy') }}</span>
                 </RouterLink>
 
                 <RouterLink to="/privacy-policy"
-                    class="flex items-center gap-2 text-blue-400 lg:text-gray-200 lg:hover:text-blue-400 transition-colors">
+                    class="flex items-center gap-2 text-gray-200 lg:hover:text-blue-400 transition-colors">
                     <ShieldCheck :size="18" />
                     <span>{{ $t('footer.privacy-policy') }}</span>
                 </RouterLink>
 
                 <RouterLink to="/legal-notice"
-                    class="flex items-center gap-2 text-gray-400 lg:text-gray-200 lg:hover:text-gray-400 transition-colors">
+                    class="flex items-center gap-2 text-gray-200 lg:hover:text-gray-400 transition-colors">
                     <FileText :size="18" />
                     <span>{{ $t('footer.legal-notice') }}</span>
                 </RouterLink>
@@ -43,13 +43,13 @@
                 </h3>
 
                 <a href="https://www.instagram.com/elmanicomiotattoo/"
-                    class="flex items-center gap-2 text-pink-400 lg:text-gray-200 lg:hover:text-pink-400 transition-colors">
+                    class="flex items-center gap-2 text-gray-200 lg:hover:text-pink-400 transition-colors">
                     <Camera :size="20" />
                     <span>Instagram</span>
                 </a>
 
                 <a href="https://www.tiktok.com/@elmanicomiotattoo"
-                    class="flex items-center gap-2 text-gray-400 lg:text-gray-200 lg:hover:text-gray-400 transition-colors">
+                    class="flex items-center gap-2 text-gray-200 lg:hover:text-gray-400 transition-colors">
                     <Music2 :size="20" />
                     <span>TikTok</span>
                 </a>
@@ -64,14 +64,14 @@
                 </h3>
 
                 <a href="mailto:contacto@elminicomiotattoo.com"
-                    class="flex items-center gap-2 text-blue-400 lg:text-gray-200 lg:hover:text-blue-400 transition-colors">
+                    class="flex items-center gap-2 text-gray-200 lg:hover:text-blue-400 transition-colors">
                     <Mail :size="20" />
                     <span>Email</span>
                 </a>
 
                 <a :href="`https://wa.me/34674444826?text=${encodeURIComponent($t('whatsapp-message.text'))}`"
                     target="_blank" rel="noopener noreferrer"
-                    class="flex items-center gap-2 text-green-400 lg:text-gray-200 lg:hover:text-green-400 transition-colors">
+                    class="flex items-center gap-2 text-gray-200 lg:hover:text-green-400 transition-colors">
                     <MessageCircle :size="20" />
                     <span>WhatsApp</span>
                 </a>
