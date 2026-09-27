@@ -9,3 +9,48 @@ body {
 .font-display {
   font-family: 'Angel Wish', cursive;
 }
+
+@layer components {
+  .game-hover {
+    position: relative;
+    isolation: isolate;
+  }
+
+  /* Borde fino que aparece al seleccionar */
+  .game-hover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid #8c7853;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease;
+  }
+
+  /* Esquinas doradas */
+  .game-hover::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 200ms ease;
+
+    background:
+      linear-gradient(#8c7853, #8c7853) top left / 10px 2px no-repeat,
+      linear-gradient(#8c7853, #8c7853) top left / 2px 10px no-repeat,
+      linear-gradient(#8c7853, #8c7853) top right / 10px 2px no-repeat,
+      linear-gradient(#8c7853, #8c7853) top right / 2px 10px no-repeat,
+      linear-gradient(#8c7853, #8c7853) bottom left / 10px 2px no-repeat,
+      linear-gradient(#8c7853, #8c7853) bottom left / 2px 10px no-repeat,
+      linear-gradient(#8c7853, #8c7853) bottom right / 10px 2px no-repeat,
+      linear-gradient(#8c7853, #8c7853) bottom right / 2px 10px no-repeat;
+  }
+
+  .game-hover:hover::before,
+  .game-hover:hover::after,
+  .game-hover:focus-visible::before,
+  .game-hover:focus-visible::after {
+    opacity: 1;
+  }
+}

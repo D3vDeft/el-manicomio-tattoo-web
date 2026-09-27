@@ -15,49 +15,42 @@
             <!-- Navegación -->
             <nav class="flex items-center gap-1">
 
-                <RouterLink to="/" class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 transition">
+                <RouterLink to="/" class="flex items-center gap-2 px-3 py-2 game-hover transition">
                     <House :size="20" />
                     <span>{{ $t('home.section-name') }}</span>
                 </RouterLink>
 
-                <RouterLink to="/tattoos"
-                    class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 transition">
+                <RouterLink to="/tattoos" class="flex items-center gap-2 px-3 py-2 game-hover transition">
                     <PenTool :size="20" />
                     <span>{{ $t('tattoos.section-name') }}</span>
                 </RouterLink>
 
-                <RouterLink to="/piercings"
-                    class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 transition">
+                <RouterLink to="/piercings" class="flex items-center gap-2 px-3 py-2 game-hover transition">
                     <CircleDot :size="20" />
                     <span>{{ $t('piercings.section-name') }}</span>
                 </RouterLink>
 
-                <RouterLink to="/tooth-gems"
-                    class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 transition">
+                <RouterLink to="/tooth-gems" class="flex items-center gap-2 px-3 py-2 game-hover transition">
                     <Sparkles :size="20" />
                     <span>{{ $t('tooth-gems.section-name') }}</span>
                 </RouterLink>
 
-                <RouterLink to="/jewelers"
-                    class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 transition">
+                <RouterLink to="/jewelers" class="flex items-center gap-2 px-3 py-2 game-hover transition">
                     <Gem :size="20" />
                     <span>{{ $t('jewelers.section-name') }}</span>
                 </RouterLink>
 
-                <RouterLink to="/self-care"
-                    class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 transition">
+                <RouterLink to="/self-care" class="flex items-center gap-2 px-3 py-2 game-hover transition">
                     <Heart :size="20" />
                     <span>{{ $t('self-care.section-name') }}</span>
                 </RouterLink>
 
-                <RouterLink to="/contact"
-                    class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 transition">
+                <RouterLink to="/contact" class="flex items-center gap-2 px-3 py-2 game-hover transition">
                     <Mail :size="20" />
                     <span>{{ $t('contact.section-name') }}</span>
                 </RouterLink>
 
-                <RouterLink to="/promo"
-                    class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 transition">
+                <RouterLink to="/promo" class="flex items-center gap-2 px-3 py-2 game-hover transition">
                     <Tag :size="20" />
                     <span>{{ $t('promo.section-name') }}</span>
                 </RouterLink>

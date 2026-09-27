@@ -81,7 +81,7 @@
         </div>
 
         <!-- Copyright -->
-        <div class="border-t border-gray-700 mt-8 pt-4 text-center">
+        <div class="border-t border-[#8c7853] mt-8 pt-4 text-center">
             <p class="text-sm text-gray-400">
                 {{ $t('footer.copyright') }}
             </p>
