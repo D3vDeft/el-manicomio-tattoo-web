@@ -1,6 +1,6 @@
 import ContactView from '@/views/ContactView.vue';
 import CookiesPolicyView from '@/views/CookiesPolicyView.vue';
-import HomeView from '@/views/HomeView.vue';
+import HomeView from '@/views/home/HomeView.vue';
 import JewelersView from '@/views/JewelersView.vue';
 import LegalNoticeView from '@/views/LegalNoticeView.vue';
 import PiercingsView from '@/views/PiercingsView.vue';
