@@ -68,7 +68,7 @@
 
                 <div class="mt-12 grid gap-6 text-left md:grid-cols-3 max-w-5xl mx-auto">
                     <RouterLink to="/tattoos"
-                        class="max-w-sm mx-auto my-10 bg-[#0d0d0d] border border-[#2a251f] rounded-none p-6 shadow-[0_0_15px_rgba(0,0,0,0.9)] relative overflow-hidden group">
+                        class="max-w-sm mx-auto my-2 md:my-10 bg-[#0d0d0d] border border-[#2a251f] rounded-none p-6 shadow-[0_0_15px_rgba(0,0,0,0.9)] relative overflow-hidden group">
                         <!-- Adorno de esquina superior izquierda -->
                         <div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#8c7853] opacity-70">
                         </div>
@@ -107,7 +107,7 @@
                     </RouterLink>
 
                     <RouterLink to="/piercings"
-                        class="max-w-sm mx-auto my-10 bg-[#0d0d0d] border border-[#2a251f] rounded-none p-6 shadow-[0_0_15px_rgba(0,0,0,0.9)] relative overflow-hidden group">
+                        class="max-w-sm mx-auto my-2 md:my-10 bg-[#0d0d0d] border border-[#2a251f] rounded-none p-6 shadow-[0_0_15px_rgba(0,0,0,0.9)] relative overflow-hidden group">
                         <!-- Adorno de esquina superior izquierda -->
                         <div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#8c7853] opacity-70">
                         </div>
@@ -145,7 +145,7 @@
                         </div>
                     </RouterLink>
                     <a href="https://www.google.com/maps/search/?api=1&query=El+Manicomio+Tattoo+%26+Piercing+Madrid"
-                        class="max-w-sm mx-auto my-10 bg-[#0d0d0d] border border-[#2a251f] rounded-none p-6 shadow-[0_0_15px_rgba(0,0,0,0.9)] relative overflow-hidden group">
+                        class="max-w-sm mx-auto my-2 md:my-10 bg-[#0d0d0d] border border-[#2a251f] rounded-none p-6 shadow-[0_0_15px_rgba(0,0,0,0.9)] relative overflow-hidden group">
                         <!-- Adorno de esquina superior izquierda -->
                         <div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#8c7853] opacity-70">
                         </div>
