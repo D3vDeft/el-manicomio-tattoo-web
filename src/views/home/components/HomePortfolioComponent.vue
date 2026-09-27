@@ -55,7 +55,7 @@
                             class="shrink-0 cursor-zoom-in focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
                             :aria-label="`Ampliar imagen ${index + 1}`" @click="openImage(index)">
                             <img :src="image.src" :alt="image.alt"
-                                class="w-62.5 md:w-75 lg:w-85 h-105 md:h-120 object-cover" loading="lazy" />
+                                class="w-62.5 md:w-75 lg:w-85 h-105 md:h-120 object-cover" loading="eager" />
                         </button>
                     </div>
                 </div>
