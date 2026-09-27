@@ -28,12 +28,30 @@
                 </div>
 
                 <!-- MAPA -->
-                <a href="https://www.google.com/maps/search/?api=1&query=Calle+de+Gaztambide+26+Madrid" target="_blank"
-                    rel="noopener noreferrer" class="block overflow-hidden shadow-2xl">
-                    <iframe src="https://www.google.com/maps?q=Calle%20de%20Gaztambide%2026%2C%20Madrid&output=embed"
-                        title="Mapa de El Manicomio Tattoo" class="w-full h-100 border-0 pointer-events-none"
-                        loading="lazy"></iframe>
-                </a>
+
+                <div
+                    class="bg-[#0d0d0d] border border-[#2a251f] rounded-none p-6 shadow-[0_0_15px_rgba(0,0,0,0.9)] relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#8c7853] opacity-70"></div>
+
+                    <div class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-[#8c7853] opacity-70"></div>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Calle+de+Gaztambide+26+Madrid"
+                        target="_blank" rel="noopener noreferrer" class="block overflow-hidden shadow-2xl">
+                        <iframe
+                            src="https://www.google.com/maps?q=Calle%20de%20Gaztambide%2026%2C%20Madrid&output=embed"
+                            title="Mapa de El Manicomio Tattoo" class="w-full h-100 border-0 pointer-events-none"
+                            loading="lazy"></iframe>
+                    </a>
+
+                    <div class="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-[#8c7853] opacity-70">
+                    </div>
+
+                    <div class="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#8c7853] opacity-70">
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
     </section>
