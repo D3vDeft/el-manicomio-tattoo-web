@@ -58,8 +58,7 @@
             </nav>
 
             <!-- Idioma desktop -->
-            <button class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 transition"
-                @click="changeLanguage">
+            <button class="flex items-center gap-2 px-3 py-2 game-hover transition" @click="changeLanguage">
                 <Languages :size="20" />
                 {{ locale === 'es_ES' ? 'English' : 'Español' }}
             </button>
