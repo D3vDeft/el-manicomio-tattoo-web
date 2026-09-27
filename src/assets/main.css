@@ -21,7 +21,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    border: 1px solid #8c7853;
+    border: 1px solid #2a251f;
     opacity: 0;
     pointer-events: none;
     transition: opacity 200ms ease;
