@@ -57,11 +57,11 @@ const handleKeydown = (event: KeyboardEvent) => {
 }
 
 // Bloquear el scroll mientras el visor está abierto.
-watch(selectedImage, (newValue) => {
-    if (newValue !== null) {
+watch(selectedImage, (newValue, oldValue) => {
+    if (oldValue === null && newValue !== null) {
         previousOverflow = document.body.style.overflow
         document.body.style.overflow = 'hidden'
-    } else {
+    } else if (oldValue !== null && newValue === null) {
         document.body.style.overflow = previousOverflow
     }
 })

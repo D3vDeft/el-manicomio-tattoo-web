@@ -26,7 +26,9 @@
 
         <!-- VISOR DE IMÁGENES -->
         <HomeImageViewerComponent />
+
     </div>
+
 </template>
 
 <script setup lang="ts">
