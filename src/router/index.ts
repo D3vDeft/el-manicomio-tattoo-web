@@ -34,6 +34,7 @@ const router = createRouter({
         title: 'Tatuajes personalizados en Madrid | El Manicomio Tattoo',
         description:
           'Tatuajes personalizados en Madrid: blackwork, realismo, lettering, minimalista y diseño exclusivo en el estudio El Manicomio Tattoo.',
+        scrollToTop: true,
       },
     },
     {
@@ -44,6 +45,7 @@ const router = createRouter({
         title: 'Piercings en Madrid | El Manicomio Tattoo',
         description:
           'Piercings en Madrid con atención profesional, materiales seguros y asesoramiento para elegir el mejor piercing para ti.',
+        scrollToTop: true,
       },
     },
     {
@@ -54,6 +56,7 @@ const router = createRouter({
         title: 'Tooth gems en Madrid | El Manicomio Tattoo',
         description:
           'Tooth gems en Madrid con acabados seguros y personalizados para darle un toque único a tu estilo.',
+        scrollToTop: true,
       },
     },
     {
@@ -64,6 +67,7 @@ const router = createRouter({
         title: 'Joyería y accesorios | El Manicomio Tattoo',
         description:
           'Descubre joyería premium y accesorios para complementar tu estilo con piezas elegantes y de alta calidad.',
+        scrollToTop: true,
       },
     },
     {
@@ -74,6 +78,7 @@ const router = createRouter({
         title: 'Self care y cuidado personal | El Manicomio Tattoo',
         description:
           'Cuidado personal y self care para tu piel y tu proceso de estilo, con recomendaciones y productos pensados para ti.',
+        scrollToTop: true,
       },
     },
     {
@@ -84,6 +89,7 @@ const router = createRouter({
         title: 'Contacta con El Manicomio Tattoo | Madrid',
         description:
           'Pide tu cita con El Manicomio Tattoo en Madrid. Contacta con nosotros para tatuajes personalizados, piercings y más.',
+        scrollToTop: true,
       },
     },
     {
@@ -94,6 +100,7 @@ const router = createRouter({
         title: 'Promociones y ofertas de tatuajes en Madrid',
         description:
           'Consulta promociones y ofertas del estudio de tatuajes El Manicomio Tattoo en Madrid y reserva tu cita.',
+        scrollToTop: true,
       },
     },
     {
@@ -104,6 +111,7 @@ const router = createRouter({
         title: 'Política de cookies | El Manicomio Tattoo',
         description:
           'Información sobre el uso de cookies y tecnologías relacionadas en la web de El Manicomio Tattoo.',
+        scrollToTop: true,
       },
     },
     {
@@ -114,6 +122,7 @@ const router = createRouter({
         title: 'Política de privacidad | El Manicomio Tattoo',
         description:
           'Consulta la política de privacidad de El Manicomio Tattoo y cómo tratamos tus datos personales.',
+        scrollToTop: true,
       },
     },
     {
@@ -123,9 +132,19 @@ const router = createRouter({
       meta: {
         title: 'Aviso legal | El Manicomio Tattoo',
         description: 'Aviso legal y condiciones de uso de la web de El Manicomio Tattoo.',
+        scrollToTop: true,
       },
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    if (to.meta.scrollToTop) {
+      return { top: 0, behavior: 'smooth' };
+    }
+    if (savedPosition) {
+      return savedPosition;
+    }
+    return {};
+  },
 });
 
 router.afterEach((to) => {
