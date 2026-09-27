@@ -40,7 +40,7 @@
                         <iframe
                             src="https://www.google.com/maps?q=Calle%20de%20Gaztambide%2026%2C%20Madrid&output=embed"
                             title="Mapa de El Manicomio Tattoo" class="w-full h-100 border-0 pointer-events-none"
-                            loading="lazy"></iframe>
+                            loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                     </a>
 
                     <div class="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-[#8c7853] opacity-70">
