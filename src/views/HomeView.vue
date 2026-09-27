@@ -2,7 +2,7 @@
     <div class="text-white overflow-hidden">
         <!-- HERO -->
         <section class="relative w-full h-[calc(100vh-140px)] overflow-hidden">
-            <video autoplay muted loop playsinline preload="metadata" crossorigin="anonymous"
+            <video autoplay muted loop playsinline preload="metadata"
                 class="absolute inset-0 w-full h-full object-cover">
                 <source src="https://elmanicomiotattoo.es/wp-content/uploads/2025/07/vidFondo-1.mp4" type="video/mp4">
             </video>
@@ -32,6 +32,7 @@
                         {{ $t('home.hero.title') }}
                     </h1>
 
+                    <!-- TEXTO OCULTO PARA EL SEO -->
                     <div class="hidden max-w-3xl mx-auto space-y-6 text-white text-xl leading-8 drop-shadow-md">
                         <p>{{ $t('home.hero.paragraph-1') }}</p>
                         <p>{{ $t('home.hero.paragraph-2') }}</p>
