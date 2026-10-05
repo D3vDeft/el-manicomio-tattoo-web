@@ -2,7 +2,7 @@
     <section class="relative py-24 md:py-32">
         <div class="absolute inset-0 bg-black/35"></div>
 
-        <div class="relative z-10 max-w-5xl mx-auto px-6">
+        <div class="relative z-10 max-w-8xl mx-auto px-6">
             <div class="text-center">
                 <p class="uppercase tracking-[0.35em] text-xl md:text-sm text-white/60 mb-5">
                     El Manicomio Tattoo
@@ -66,9 +66,9 @@
 
             -->
 
-                <div class="mt-12 grid gap-6 text-left md:grid-cols-3 max-w-5xl mx-auto">
+                <div class="mt-12 grid gap-6 text-left md:grid-cols-3 max-w-6xl mx-auto">
                     <RouterLink to="/tattoos"
-                        class="max-w-sm mx-auto my-2 md:my-10 bg-[#0d0d0d] border border-[#2a251f] rounded-none p-6 shadow-[0_0_15px_rgba(0,0,0,0.9)] relative overflow-hidden group">
+                        class="max-w-sm mx-auto my-auto md:my-10 bg-[#0d0d0d] border border-[#2a251f] rounded-none p-6 shadow-[0_0_15px_rgba(0,0,0,0.9)] relative overflow-hidden group">
                         <!-- Adorno de esquina superior izquierda -->
                         <div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#8c7853] opacity-70">
                         </div>
@@ -80,7 +80,8 @@
                         <!-- Contenido de la tarjeta -->
                         <div class="space-y-3">
                             <!-- Título Principal -->
-                            <h2 class="text-3xl font-display text-[#e5e5e5] tracking-wide leading-tight font-bold">
+                            <h2
+                                class="text-4xl font-display text-[#e5e5e5] tracking-wide leading-tight font-bold text-center">
                                 {{ $t('home.hero.cards.card-1.title') }}
                             </h2>
 
@@ -92,7 +93,7 @@
                             </div>
 
                             <!-- Descripción -->
-                            <p class="text-white/75 font-sans leading-relaxed">
+                            <p class="text-white/75 font-sans leading-relaxed text-xl">
                                 {{ $t('home.hero.cards.card-1.description') }}
                             </p>
                         </div>
@@ -119,7 +120,8 @@
                         <!-- Contenido de la tarjeta -->
                         <div class="space-y-3">
                             <!-- Título Principal -->
-                            <h2 class="text-3xl font-display text-[#e5e5e5] tracking-wide leading-tight font-bold">
+                            <h2
+                                class="text-4xl font-display text-[#e5e5e5] tracking-wide leading-tight font-bold text-center">
                                 {{ $t('home.hero.cards.card-2.title') }}
                             </h2>
 
@@ -131,7 +133,7 @@
                             </div>
 
                             <!-- Descripción -->
-                            <p class="text-white/75 font-sans leading-relaxed">
+                            <p class="text-white/75 font-sans leading-relaxed text-xl">
                                 {{ $t('home.hero.cards.card-2.description') }}
                             </p>
                         </div>
@@ -157,7 +159,8 @@
                         <!-- Contenido de la tarjeta -->
                         <div class="space-y-3">
                             <!-- Título Principal -->
-                            <h2 class="text-3xl font-display text-[#e5e5e5] tracking-wide leading-tight font-bold">
+                            <h2
+                                class="text-4xl font-display text-[#e5e5e5] tracking-wide leading-tight font-bold text-center">
                                 {{ $t('home.hero.cards.card-3.title') }}
                             </h2>
 
@@ -169,7 +172,7 @@
                             </div>
 
                             <!-- Descripción -->
-                            <p class="text-white/75 font-sans leading-relaxed">
+                            <p class="text-white/75 font-sans leading-relaxed text-xl">
                                 {{ $t('home.hero.cards.card-3.description') }}
                             </p>
                         </div>
