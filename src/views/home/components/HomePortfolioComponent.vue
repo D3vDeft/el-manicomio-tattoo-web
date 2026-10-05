@@ -39,7 +39,8 @@
             </div>
 
             <!-- Cinta infinita -->
-            <div class="relative w-full overflow-hidden">
+            <div ref="carousel" class="relative w-full overflow-hidden touch-pan-y cursor-grab"
+                :class="{ 'cursor-grabbing': isDragging }" @pointerdown="startDragging">
                 <div
                     class="absolute left-0 top-0 bottom-0 w-16 md:w-32 z-10 bg-linear-to-r from-black/40 to-transparent pointer-events-none">
                 </div>
@@ -48,12 +49,15 @@
                     class="absolute right-0 top-0 bottom-0 w-16 md:w-32 z-10 bg-linear-to-l from-black/40 to-transparent pointer-events-none">
                 </div>
 
-                <div class="flex w-max animate-marquee" :class="{ 'marquee-paused': selectedImage !== null }">
+                <div class="flex w-max animate-marquee"
+                    :class="{ 'marquee-paused': selectedImage !== null || isDragging }">
                     <div v-for="group in 2" :key="group" class="flex gap-5 pr-5"
                         :aria-hidden="group === 2 ? 'true' : undefined">
                         <button v-for="(image, index) in images" :key="`${group}-${image.src}`" type="button"
-                            class="shrink-0 cursor-zoom-in focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
-                            :aria-label="`Ampliar imagen ${index + 1}`" @click="openImage(index)">
+                            class="shrink-0 cursor-zoom-in select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                            :aria-label="`Ampliar imagen ${index + 1}`"
+                            @click="handleImageClick(index, $event)"
+                            @dragstart.prevent>
                             <img :src="image.src" :alt="image.alt"
                                 class="w-62.5 md:w-75 lg:w-85 h-105 md:h-120 object-cover" loading="eager" />
                         </button>
@@ -65,6 +69,7 @@
 </template>
 
 <script setup lang="ts">
+import { onUnmounted, ref, watch } from 'vue'
 import { storeToRefs } from 'pinia'
 import { usePortfolioStore } from '@/stores/portfolio'
 import { Camera, Music2 } from '@lucide/vue'
@@ -72,10 +77,90 @@ import { Camera, Music2 } from '@lucide/vue'
 const portfolioStore = usePortfolioStore()
 
 const { images, selectedImage } = storeToRefs(portfolioStore)
+const carousel = ref<HTMLElement | null>(null)
+const isDragging = ref(false)
+
+let activePointerId: number | null = null
+let startX = 0
+let startTime = 0
+let animation: Animation | undefined
+let animationDuration = 0
+let loopWidth = 0
+let didDrag = false
 
 const openImage = (index: number) => {
     portfolioStore.openImage(index)
 }
+
+const startDragging = (event: PointerEvent) => {
+    if (!event.isPrimary || event.button !== 0 || !carousel.value) return
+
+    const track = carousel.value.querySelector<HTMLElement>('.animate-marquee')
+    animation = track?.getAnimations()[0]
+    const duration = animation?.effect?.getComputedTiming().duration
+    const currentTime = animation?.currentTime
+    loopWidth = track ? track.scrollWidth / 2 : 0
+
+    if (!animation || typeof duration !== 'number' || typeof currentTime !== 'number' || loopWidth === 0) {
+        animation = undefined
+        return
+    }
+
+    activePointerId = event.pointerId
+    startX = event.clientX
+    startTime = currentTime
+    animationDuration = duration
+    didDrag = false
+    isDragging.value = true
+    animation.pause()
+    window.addEventListener('pointermove', moveDragging)
+    window.addEventListener('pointerup', stopDragging)
+    window.addEventListener('pointercancel', stopDragging)
+}
+
+const moveDragging = (event: PointerEvent) => {
+    if (event.pointerId !== activePointerId || !animation) return
+
+    const delta = event.clientX - startX
+    if (Math.abs(delta) > 5) didDrag = true
+
+    const duration = animationDuration
+    const time = (startTime - (delta / loopWidth) * duration) % duration
+    animation.currentTime = (time + duration) % duration
+}
+
+const stopDragging = (event: PointerEvent) => {
+    if (event.pointerId !== activePointerId) return
+
+    activePointerId = null
+    isDragging.value = false
+    window.removeEventListener('pointermove', moveDragging)
+    window.removeEventListener('pointerup', stopDragging)
+    window.removeEventListener('pointercancel', stopDragging)
+
+    if (selectedImage.value === null) animation?.play()
+    animation = undefined
+}
+
+const handleImageClick = (index: number, event: MouseEvent) => {
+    if (didDrag && event.detail > 0) {
+        didDrag = false
+        return
+    }
+
+    didDrag = false
+    openImage(index)
+}
+
+watch(selectedImage, (image) => {
+    if (image !== null) animation?.pause()
+})
+
+onUnmounted(() => {
+    window.removeEventListener('pointermove', moveDragging)
+    window.removeEventListener('pointerup', stopDragging)
+    window.removeEventListener('pointercancel', stopDragging)
+})
 </script>
 
 <style scoped>
@@ -85,6 +170,11 @@ const openImage = (index: number) => {
 
 .marquee-paused {
     animation-play-state: paused;
+}
+
+.animate-marquee,
+.animate-marquee button {
+    -webkit-user-drag: none;
 }
 
 @keyframes marquee {

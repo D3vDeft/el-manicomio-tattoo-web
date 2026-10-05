@@ -7,7 +7,7 @@ import PiercingsView from '@/views/PiercingsView.vue';
 import PrivacyPolicyView from '@/views/PrivacyPolicyView.vue';
 import PromoView from '@/views/PromoView.vue';
 import SalfCareView from '@/views/SalfCareView.vue';
-import TattooView from '@/views/TattooView.vue';
+import TattooView from '@/views/tattoo/TattooView.vue';
 import ToothGemsView from '@/views/ToothGemsView.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
