@@ -58,6 +58,18 @@
     "paragraph-1": "Desde piezas minimalistas hasta trabajos más complejos, cada tatuaje se diseña con una visión clara: que encaje con tu estilo, con tu cuerpo y con el significado que quieres transmitir.",
     "paragraph-2": "Nuestro estudio en Chamberí combina el arte del tatuaje con una atención cercana y profesional para que la experiencia sea cómoda desde la primera consulta hasta la entrega final.",
     "cta": "Reserva tu cita",
+    "gallery": {
+      "title": "Nuestro trabajo",
+      "description": "Explora fotos y vídeos de los tatuajes realizados en el estudio.",
+      "empty": "Todavía no hay fotos ni vídeos disponibles.",
+      "image-alt": "Tatuaje realizado en El Manicomio Tattoo",
+      "video-alt": "Vídeo de un tatuaje realizado en El Manicomio Tattoo",
+      "open-media": "Abrir trabajo {number}",
+      "viewer-label": "Galería de tatuajes",
+      "close": "Cerrar galería",
+      "previous": "Trabajo anterior",
+      "next": "Trabajo siguiente"
+    },
     "features": {
       "one": {
         "title": "Diseños a medida",

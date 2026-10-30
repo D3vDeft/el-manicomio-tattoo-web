@@ -5,18 +5,63 @@
             <h1 class="font-display text-5xl md:text-6xl mb-6 text-white">{{ $t('tattoos.title') }}</h1>
             <p class="max-w-4xl text-lg md:text-xl leading-8 text-white/80 mb-10">{{ $t('tattoos.intro') }}</p>
 
-            <div class="grid md:grid-cols-3 gap-6 mb-10">
-                <article class="border border-white/15 bg-white/5 p-6">
-                    <h2 class="text-2xl mb-3 text-white">{{ $t('tattoos.features.one.title') }}</h2>
-                    <p class="text-white/75 leading-7">{{ $t('tattoos.features.one.text') }}</p>
+            <div class="mt-12 mb-10 grid max-w-6xl gap-6 text-left md:grid-cols-3 mx-auto">
+                <article class="my-auto bg-[#0d0d0d] border border-[#2a251f] rounded-none p-6 shadow-[0_0_15px_rgba(0,0,0,0.9)] relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#8c7853] opacity-70"></div>
+                    <div class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-[#8c7853] opacity-70"></div>
+                    <div class="space-y-3">
+                        <h2 class="text-4xl font-display text-[#e5e5e5] tracking-wide leading-tight font-bold text-center">
+                            {{ $t('tattoos.features.one.title') }}
+                        </h2>
+                        <div class="flex items-center justify-center my-2 opacity-40">
+                            <div class="h-px bg-[#8c7853] w-full"></div>
+                            <span class="px-2 text-[#8c7853] text-xs">◆</span>
+                            <div class="h-px bg-[#8c7853] w-full"></div>
+                        </div>
+                        <p class="text-white/75 font-sans leading-relaxed text-xl">
+                            {{ $t('tattoos.features.one.text') }}
+                        </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-[#8c7853] opacity-70"></div>
+                    <div class="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#8c7853] opacity-70"></div>
                 </article>
-                <article class="border border-white/15 bg-white/5 p-6">
-                    <h2 class="text-2xl mb-3 text-white">{{ $t('tattoos.features.two.title') }}</h2>
-                    <p class="text-white/75 leading-7">{{ $t('tattoos.features.two.text') }}</p>
+                <article class="my-2 bg-[#0d0d0d] border border-[#2a251f] rounded-none p-6 shadow-[0_0_15px_rgba(0,0,0,0.9)] relative overflow-hidden group md:my-10">
+                    <div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#8c7853] opacity-70"></div>
+                    <div class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-[#8c7853] opacity-70"></div>
+                    <div class="space-y-3">
+                        <h2 class="text-4xl font-display text-[#e5e5e5] tracking-wide leading-tight font-bold text-center">
+                            {{ $t('tattoos.features.two.title') }}
+                        </h2>
+                        <div class="flex items-center justify-center my-2 opacity-40">
+                            <div class="h-px bg-[#8c7853] w-full"></div>
+                            <span class="px-2 text-[#8c7853] text-xs">◆</span>
+                            <div class="h-px bg-[#8c7853] w-full"></div>
+                        </div>
+                        <p class="text-white/75 font-sans leading-relaxed text-xl">
+                            {{ $t('tattoos.features.two.text') }}
+                        </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-[#8c7853] opacity-70"></div>
+                    <div class="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#8c7853] opacity-70"></div>
                 </article>
-                <article class="border border-white/15 bg-white/5 p-6">
-                    <h2 class="text-2xl mb-3 text-white">{{ $t('tattoos.features.three.title') }}</h2>
-                    <p class="text-white/75 leading-7">{{ $t('tattoos.features.three.text') }}</p>
+                <article class="my-2 bg-[#0d0d0d] border border-[#2a251f] rounded-none p-6 shadow-[0_0_15px_rgba(0,0,0,0.9)] relative overflow-hidden group md:my-10">
+                    <div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#8c7853] opacity-70"></div>
+                    <div class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-[#8c7853] opacity-70"></div>
+                    <div class="space-y-3">
+                        <h2 class="text-4xl font-display text-[#e5e5e5] tracking-wide leading-tight font-bold text-center">
+                            {{ $t('tattoos.features.three.title') }}
+                        </h2>
+                        <div class="flex items-center justify-center my-2 opacity-40">
+                            <div class="h-px bg-[#8c7853] w-full"></div>
+                            <span class="px-2 text-[#8c7853] text-xs">◆</span>
+                            <div class="h-px bg-[#8c7853] w-full"></div>
+                        </div>
+                        <p class="text-white/75 font-sans leading-relaxed text-xl">
+                            {{ $t('tattoos.features.three.text') }}
+                        </p>
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-[#8c7853] opacity-70"></div>
+                    <div class="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#8c7853] opacity-70"></div>
                 </article>
             </div>
 
@@ -34,7 +79,9 @@
             </div>
         </section>
     </div>
+    <TattooGalleryComponent />
 </template>
 
 <script setup lang="ts">
+import TattooGalleryComponent from '@/views/tattoo/components/TattooGalleryComponent.vue';
 </script>

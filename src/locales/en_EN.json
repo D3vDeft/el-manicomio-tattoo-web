@@ -58,6 +58,18 @@
     "paragraph-1": "From minimalist pieces to more complex projects, each tattoo is designed with a clear goal: to fit your style, your body and the meaning you want to express.",
     "paragraph-2": "Our studio in Chamberí combines tattoo artistry with close, professional care so your experience feels comfortable from the first consultation to the final result.",
     "cta": "Book your appointment",
+    "gallery": {
+      "title": "Our Work",
+      "description": "Explore photos and videos of tattoos created at the studio.",
+      "empty": "There are no photos or videos available yet.",
+      "image-alt": "Tattoo created at El Manicomio Tattoo",
+      "video-alt": "Video of a tattoo created at El Manicomio Tattoo",
+      "open-media": "Open portfolio item {number}",
+      "viewer-label": "Tattoo gallery",
+      "close": "Close gallery",
+      "previous": "Previous item",
+      "next": "Next item"
+    },
     "features": {
       "one": {
         "title": "Custom designs",

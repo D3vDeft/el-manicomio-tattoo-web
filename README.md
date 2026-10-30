@@ -65,6 +65,12 @@ Clona el repositorio y ejecuta:
 pnpm install
 ```
 
+### Galería de tatuajes
+
+La vista de Tattoos muestra las imágenes JPEG y los vídeos MOV de
+`src/assets/tattoos-images`. El carrusel de inicio utiliza las imágenes de esa
+misma carpeta.
+
 ### Desarrollo
 
 Para iniciar el servidor de desarrollo con recarga automática:
