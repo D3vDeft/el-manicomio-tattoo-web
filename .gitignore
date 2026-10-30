@@ -31,7 +31,6 @@ coverage
 # Cypress
 /cypress/videos/
 /cypress/screenshots/
-/src/assets/tattoos-images/
 
 # Vitest
 __screenshots__/
