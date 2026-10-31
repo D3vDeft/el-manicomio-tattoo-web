@@ -59,6 +59,7 @@
       <div
         v-if="selectedIndex !== null && selectedImage"
         class="fixed inset-0 z-9999 flex items-center justify-center bg-black/95 p-5 md:p-14"
+        :class="{ 'viewer--closing': isClosing }"
         role="dialog"
         aria-modal="true"
         :aria-label="$t('tattoos.gallery.viewer-label')"
@@ -66,43 +67,56 @@
       >
         <button
           type="button"
-          class="viewer-button absolute right-5 top-5 text-3xl"
+          class="viewer-button absolute right-5 top-5 z-10 text-3xl"
           :aria-label="$t('tattoos.gallery.close')"
-          @click="closeImage"
+          @click="closeWithAnimation"
         >
           &times;
         </button>
         <button
           type="button"
-          class="viewer-button absolute left-3 top-1/2 -translate-y-1/2 md:left-6"
+          class="viewer-button absolute left-3 top-1/2 z-10 -translate-y-1/2 md:left-6"
           :aria-label="$t('tattoos.gallery.previous')"
-          @click="changeImage(-1)"
+          @click="navigate(-1)"
         >
           &#10094;
         </button>
-        <img
-          v-if="selectedImage.type === 'image'"
-          :src="selectedImage.src"
-          :alt="selectedImage.alt || $t('tattoos.gallery.image-alt')"
-          class="max-h-[85vh] max-w-[90vw] object-contain"
-        />
-        <video
-          v-else
-          :key="selectedImage.src"
-          class="max-h-[85vh] max-w-[90vw] object-contain"
-          controls
-          muted
-          playsinline
-          preload="metadata"
-          :aria-label="selectedImage.alt || $t('tattoos.gallery.video-alt')"
+        <div
+          class="viewer-media"
+          :class="{ 'viewer-media--image': selectedImage.type === 'image' }"
+          :style="selectedImage.type === 'image' ? imageStyle : undefined"
+          @touchstart.passive="handleTouchStart"
+          @touchmove="handleTouchMove"
+          @touchend="handleTouchEnd"
+          @touchcancel="handleTouchCancel"
         >
-          <source :src="selectedImage.src" type="video/quicktime" />
-        </video>
+          <Transition :name="transitionName" mode="out-in">
+            <img
+              v-if="selectedImage.type === 'image'"
+              :key="selectedImage.src"
+              :src="selectedImage.src"
+              :alt="selectedImage.alt || $t('tattoos.gallery.image-alt')"
+              class="viewer-media-content"
+            />
+            <video
+              v-else
+              :key="selectedImage.src"
+              class="viewer-media-content"
+              controls
+              muted
+              playsinline
+              preload="metadata"
+              :aria-label="selectedImage.alt || $t('tattoos.gallery.video-alt')"
+            >
+              <source :src="selectedImage.src" type="video/quicktime" />
+            </video>
+          </Transition>
+        </div>
         <button
           type="button"
-          class="viewer-button absolute right-3 top-1/2 -translate-y-1/2 md:right-6"
+          class="viewer-button absolute right-3 top-1/2 z-10 -translate-y-1/2 md:right-6"
           :aria-label="$t('tattoos.gallery.next')"
-          @click="changeImage(1)"
+          @click="navigate(1)"
         >
           &#10095;
         </button>
@@ -115,6 +129,7 @@
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue';
 import { Play } from '@lucide/vue';
 import { tattooMedia } from '@/services/tattooMedia';
+import { useSwipeNavigation } from '@/composables/useSwipeNavigation';
 
 const media = tattooMedia;
 const frameVariants = [
@@ -138,26 +153,42 @@ const openImage = (index: number) => {
   selectedIndex.value = index;
 };
 
-const closeImage = () => {
+const finishClose = () => {
   selectedIndex.value = null;
 };
 
-const changeImage = (direction: number) => {
+const closeImage = () => closeWithAnimation();
+
+const changeImage = (direction: -1 | 1) => {
   if (selectedIndex.value === null || media.length === 0) return;
 
   selectedIndex.value = (selectedIndex.value + direction + media.length) % media.length;
 };
 
+const {
+  transitionName,
+  imageStyle,
+  isClosing,
+  navigate,
+  closeWithAnimation,
+  handleTouchStart,
+  handleTouchMove,
+  handleTouchEnd,
+  handleTouchCancel,
+  resetTransform,
+} = useSwipeNavigation(changeImage, finishClose);
+
 const handleKeydown = (event: KeyboardEvent) => {
   if (selectedIndex.value === null) return;
 
   if (event.key === 'Escape') closeImage();
-  if (event.key === 'ArrowLeft') changeImage(-1);
-  if (event.key === 'ArrowRight') changeImage(1);
+  if (event.key === 'ArrowLeft') navigate(-1);
+  if (event.key === 'ArrowRight') navigate(1);
 };
 
 watch(selectedIndex, (newValue, oldValue) => {
   if (oldValue === null && newValue !== null) {
+    resetTransform();
     previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
   } else if (oldValue !== null && newValue === null) {
@@ -216,6 +247,72 @@ onUnmounted(() => {
   transition:
     transform 300ms ease,
     box-shadow 300ms ease;
+}
+
+.viewer-media {
+  display: flex;
+  max-width: 90vw;
+  max-height: 85vh;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+.viewer-media--image {
+  touch-action: none;
+}
+
+.viewer--closing {
+  background-color: transparent;
+  transition: background-color 280ms ease;
+}
+
+.viewer-media-content {
+  display: block;
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  will-change: transform, opacity;
+  pointer-events: none;
+}
+
+.viewer-slide-next-enter-active,
+.viewer-slide-next-leave-active,
+.viewer-slide-previous-enter-active,
+.viewer-slide-previous-leave-active {
+  transition:
+    opacity 240ms ease,
+    transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.viewer-slide-next-enter-from {
+  opacity: 0;
+  transform: translateX(48px) scale(0.97);
+}
+
+.viewer-slide-next-leave-to {
+  opacity: 0;
+  transform: translateX(-48px) scale(0.97);
+}
+
+.viewer-slide-previous-enter-from {
+  opacity: 0;
+  transform: translateX(-48px) scale(0.97);
+}
+
+.viewer-slide-previous-leave-to {
+  opacity: 0;
+  transform: translateX(48px) scale(0.97);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .viewer-slide-next-enter-active,
+  .viewer-slide-next-leave-active,
+  .viewer-slide-previous-enter-active,
+  .viewer-slide-previous-leave-active {
+    transition-duration: 1ms;
+  }
 }
 
 .artwork-frame::before {
