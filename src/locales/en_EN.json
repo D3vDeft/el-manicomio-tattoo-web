@@ -214,6 +214,13 @@
     "contact": "Contact",
     "social-media": "Follow us on social media"
   },
+  "cookie-consent": {
+    "title": "Your privacy matters",
+    "message": "We use first-party cookies and similar technologies. You can accept or reject non-essential cookies.",
+    "policy": "Learn more",
+    "accept": "Accept cookies",
+    "reject": "Reject"
+  },
   "cookies-policy": {
     "title": "Cookies Policy",
     "description": "Our website https://www.elmanicomiotattoo.com/ (the “Website”) uses a technology called “cookies” in order to collect information about the use of the Website. We inform you that we may use cookies in order to facilitate your navigation through the Website, distinguish you from other users, provide you with a better experience in using it, and identify problems to improve our Website. Likewise, if you give your consent, we will use cookies that allow us to obtain more information about your preferences and customize our Website in accordance with your individual interests. This cookie policy aims to inform you clearly and precisely about the cookies used on our Website (the “Cookie Policy”). If you want to gather more information about the cookies we use on the Website, you can send an email to the corresponding section.",
@@ -227,7 +234,7 @@
     },
     "consent": {
       "title": "Consent",
-      "description": "By using our website, you consent to the use of cookies in accordance with this Cookies Policy. You can change your cookie preferences at any time through your browser settings."
+      "description": "Browsing the website does not mean you consent to non-essential cookies. You can accept or reject them using the cookie notice; your choice will be saved on this device. To change it, clear this site's data in your browser settings."
     },
     "managing-cookies": {
       "title": "Managing cookies",

@@ -214,6 +214,13 @@
     "contact": "Contacto",
     "social-media": "Síguenos en las redes sociales"
   },
+  "cookie-consent": {
+    "title": "Tu privacidad importa",
+    "message": "Utilizamos cookies propias y tecnologías similares. Puedes aceptar o rechazar las cookies no esenciales.",
+    "policy": "Más información",
+    "accept": "Aceptar cookies",
+    "reject": "Rechazar"
+  },
   "cookies-policy": {
     "title": "Política de Cookies",
     "description": "Nuestro sitio web https://www.elmanicomiotattoo.com/ (el “Sitio Web”) utiliza una tecnología denominada “cookies” con la finalidad de poder recabar información acerca del uso del Sitio Web. Le informamos de que podemos utilizar cookies con la finalidad de facilitar su navegación a través del Sitio Web, distinguirle de otros usuarios, proporcionarle una mejor experiencia en el uso del mismo, e identificar problemas para mejorar nuestro Sitio Web. Asimismo, en caso de que preste su consentimiento, utilizaremos cookies que nos permitan obtener más información acerca de sus preferencias y personalizar nuestro Sitio Web de conformidad con sus intereses individuales. La presente política de cookies tiene por finalidad informarle de manera clara y precisa sobre las cookies que se utilizan en nuestro Sitio Web (la “Política de Cookies”). En caso de que quiera recabar más información sobre las cookies que utilizamos en el Sitio Web, podrá remitir un correo electrónico en el apartado correspondiente.",
@@ -227,7 +234,7 @@
     },
     "consent": {
       "title": "Consentimiento",
-      "description": "Al utilizar nuestro sitio web, usted acepta el uso de cookies de acuerdo con esta Política de Cookies. Puede cambiar sus preferencias de cookies en cualquier momento a través de la configuración de su navegador."
+      "description": "La navegación por el sitio web no implica aceptar cookies no esenciales. Puedes aceptarlas o rechazarlas desde el aviso de cookies; tu elección se guardará en este dispositivo. Para cambiarla, borra los datos del sitio en la configuración de tu navegador."
     },
     "managing-cookies": {
       "title": "Gestión de cookies",

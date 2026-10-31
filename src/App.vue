@@ -19,6 +19,8 @@
 
         </div>
 
+        <CookieConsentComponent />
+
     </div>
 </template>
 
@@ -26,6 +28,7 @@
 import { computed, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import CookieConsentComponent from './components/CookieConsentComponent.vue'
 import FooterComponent from './components/FooterComponent.vue'
 import HeaderComponent from './components/HeaderComponent.vue'
 
