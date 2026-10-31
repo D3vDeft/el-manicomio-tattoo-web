@@ -26,16 +26,17 @@
 
 <script setup lang="ts">
 import { computed, onMounted, watch } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import routeMetadata from './seo/routeMetadata.json'
 import CookieConsentComponent from './components/CookieConsentComponent.vue'
 import FooterComponent from './components/FooterComponent.vue'
 import HeaderComponent from './components/HeaderComponent.vue'
 
 const route = useRoute()
-const { locale } = useI18n()
+const router = useRouter()
+const { locale, t } = useI18n()
 const siteUrl = 'https://elmanicomiotattoo.es'
-
 const seoByLocale = {
     es_ES: {
         lang: 'es',
@@ -43,19 +44,18 @@ const seoByLocale = {
         title: 'Estudio de tatuajes en Madrid | El Manicomio Tattoo',
         description:
             'Estudio de tatuajes en Madrid con tatuajes personalizados, piercing, tooth gems y body art en Chamberí. El Manicomio Tattoo ofrece arte y seguridad.',
-        keywords:
-            'tatuajes en Madrid, estudio de tatuajes Madrid, piercing Madrid, tattoo studio Madrid, El Manicomio Tattoo, tatuajes personalizados, Chamberí, body art Madrid',
         schema: {
             '@context': 'https://schema.org',
             '@type': 'TattooParlor',
+            '@id': `${siteUrl}/#business`,
             name: 'El Manicomio Tattoo',
-            image: `${siteUrl}/og-image.svg`,
-            url: siteUrl,
+            image: `${siteUrl}/og-image.png`,
+            url: `${siteUrl}/`,
             telephone: '+34 674 444 826',
-            email: 'hola@elmanicomiotattoo.es',
+            email: 'elmanicomiotattoo@gmail.com',
             address: {
                 '@type': 'PostalAddress',
-                streetAddress: 'Calle de Gaztambide 26',
+                streetAddress: 'Calle de Gaztambide, 26',
                 addressLocality: 'Madrid',
                 addressRegion: 'Madrid',
                 postalCode: '28015',
@@ -66,7 +66,12 @@ const seoByLocale = {
                 'Estudio de tatuajes en Madrid especializado en tatuajes personalizados, blackwork, realismo, lettering, piercing y body art.',
             sameAs: ['https://www.instagram.com/elmanicomiotattoo/', 'https://www.tiktok.com/@elmanicomiotattoo'],
             priceRange: '€€',
-            openingHours: ['Mo-Fr 11:00-20:00', 'Sa 11:00-18:00'],
+            openingHoursSpecification: [{
+                '@type': 'OpeningHoursSpecification',
+                dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+                opens: '12:30',
+                closes: '21:00',
+            }],
         },
     },
     en_EN: {
@@ -75,19 +80,18 @@ const seoByLocale = {
         title: 'Tattoo Studio in Madrid | El Manicomio Tattoo',
         description:
             'Tattoo studio in Madrid offering custom tattoos, piercings, tooth gems and body art in Chamberí. El Manicomio Tattoo creates meaningful, high-quality studio work.',
-        keywords:
-            'tattoo studio Madrid, piercings in Madrid, custom tattoos Madrid, body art Madrid, El Manicomio Tattoo, tattoo shop in Chamberí',
         schema: {
             '@context': 'https://schema.org',
             '@type': 'TattooParlor',
+            '@id': `${siteUrl}/#business`,
             name: 'El Manicomio Tattoo',
-            image: `${siteUrl}/og-image.svg`,
-            url: siteUrl,
+            image: `${siteUrl}/og-image.png`,
+            url: `${siteUrl}/`,
             telephone: '+34 674 444 826',
-            email: 'hola@elmanicomiotattoo.es',
+            email: 'elmanicomiotattoo@gmail.com',
             address: {
                 '@type': 'PostalAddress',
-                streetAddress: 'Calle de Gaztambide 26',
+                streetAddress: 'Calle de Gaztambide, 26',
                 addressLocality: 'Madrid',
                 addressRegion: 'Madrid',
                 postalCode: '28015',
@@ -98,7 +102,12 @@ const seoByLocale = {
                 'Tattoo studio in Madrid specializing in custom tattoos, blackwork, realism, lettering, piercings and body art.',
             sameAs: ['https://www.instagram.com/elmanicomiotattoo/', 'https://www.tiktok.com/@elmanicomiotattoo'],
             priceRange: '€€',
-            openingHours: ['Mo-Fr 11:00-20:00', 'Sa 11:00-18:00'],
+            openingHoursSpecification: [{
+                '@type': 'OpeningHoursSpecification',
+                dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+                opens: '12:30',
+                closes: '21:00',
+            }],
         },
     },
 } as const
@@ -109,9 +118,18 @@ const currentSeo = computed(() => {
 })
 
 function updateSeo() {
+    const isNotFound = route.name === 'not-found'
+    const pageMetadata =
+        routeMetadata[route.path as keyof typeof routeMetadata]?.[
+            locale.value === 'en_EN' ? 'en_EN' : 'es_ES'
+        ]
     const seoMeta = {
-        title: (route.meta.title as string) || currentSeo.value.title,
-        description: (route.meta.description as string) || currentSeo.value.description,
+        title: isNotFound
+            ? `${t('notFound.title')} | El Manicomio Tattoo`
+            : pageMetadata?.title || (route.meta.title as string) || currentSeo.value.title,
+        description: isNotFound
+            ? t('notFound.description')
+            : pageMetadata?.description || (route.meta.description as string) || currentSeo.value.description,
     }
 
     document.title = seoMeta.title
@@ -124,42 +142,52 @@ function updateSeo() {
         document.head.appendChild(descriptionTag)
     }
 
-    const keywordsTag = document.head.querySelector('meta[name="keywords"]') || document.createElement('meta')
-    keywordsTag.setAttribute('name', 'keywords')
-    keywordsTag.setAttribute('content', currentSeo.value.keywords)
-    if (!document.head.contains(keywordsTag)) {
-        document.head.appendChild(keywordsTag)
+    const robotsTag = document.head.querySelector('meta[name="robots"]') || document.createElement('meta')
+    robotsTag.setAttribute('name', 'robots')
+    robotsTag.setAttribute('content', isNotFound ? 'noindex, follow' : 'index, follow, max-image-preview:large')
+    if (!document.head.contains(robotsTag)) {
+        document.head.appendChild(robotsTag)
     }
 
-    const languageTag = document.head.querySelector('meta[name="language"]') || document.createElement('meta')
-    languageTag.setAttribute('name', 'language')
-    languageTag.setAttribute('content', currentSeo.value.lang)
-    if (!document.head.contains(languageTag)) {
-        document.head.appendChild(languageTag)
-    }
+    const canonicalUrl = `${siteUrl}${route.path}${locale.value === 'en_EN' ? '?lang=en' : ''}`
 
-    const canonicalUrl = `${siteUrl}${route.fullPath}`
-    const canonical = document.querySelector('link[rel="canonical"]') || document.createElement('link')
-    canonical.setAttribute('rel', 'canonical')
-    canonical.setAttribute('href', canonicalUrl)
-    if (!document.head.contains(canonical)) {
-        document.head.appendChild(canonical)
-    }
+    if (isNotFound) {
+        document.head
+            .querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang], meta[property="og:url"], meta[name="twitter:url"]')
+            .forEach((tag) => tag.remove())
+    } else {
+        const spanishUrl = `${siteUrl}${route.path}`
+        const englishUrl = `${siteUrl}${route.path}?lang=en`
+        const canonical = document.querySelector('link[rel="canonical"]') || document.createElement('link')
+        canonical.setAttribute('rel', 'canonical')
+        canonical.setAttribute('href', canonicalUrl)
+        if (!document.head.contains(canonical)) {
+            document.head.appendChild(canonical)
+        }
 
-    const alternateEs = document.querySelector('link[rel="alternate"][hreflang="es"]') || document.createElement('link')
-    alternateEs.setAttribute('rel', 'alternate')
-    alternateEs.setAttribute('hreflang', 'es')
-    alternateEs.setAttribute('href', `${siteUrl}${route.fullPath}`)
-    if (!document.head.contains(alternateEs)) {
-        document.head.appendChild(alternateEs)
-    }
+        const alternateEs = document.querySelector('link[rel="alternate"][hreflang="es"]') || document.createElement('link')
+        alternateEs.setAttribute('rel', 'alternate')
+        alternateEs.setAttribute('hreflang', 'es')
+        alternateEs.setAttribute('href', spanishUrl)
+        if (!document.head.contains(alternateEs)) {
+            document.head.appendChild(alternateEs)
+        }
 
-    const alternateEn = document.querySelector('link[rel="alternate"][hreflang="en"]') || document.createElement('link')
-    alternateEn.setAttribute('rel', 'alternate')
-    alternateEn.setAttribute('hreflang', 'en')
-    alternateEn.setAttribute('href', `${siteUrl}${route.fullPath}?lang=en`)
-    if (!document.head.contains(alternateEn)) {
-        document.head.appendChild(alternateEn)
+        const alternateEn = document.querySelector('link[rel="alternate"][hreflang="en"]') || document.createElement('link')
+        alternateEn.setAttribute('rel', 'alternate')
+        alternateEn.setAttribute('hreflang', 'en')
+        alternateEn.setAttribute('href', englishUrl)
+        if (!document.head.contains(alternateEn)) {
+            document.head.appendChild(alternateEn)
+        }
+
+        const alternateDefault = document.querySelector('link[rel="alternate"][hreflang="x-default"]') || document.createElement('link')
+        alternateDefault.setAttribute('rel', 'alternate')
+        alternateDefault.setAttribute('hreflang', 'x-default')
+        alternateDefault.setAttribute('href', spanishUrl)
+        if (!document.head.contains(alternateDefault)) {
+            document.head.appendChild(alternateDefault)
+        }
     }
 
     const ogTitle = document.querySelector('meta[property="og:title"]') || document.createElement('meta')
@@ -183,11 +211,20 @@ function updateSeo() {
         document.head.appendChild(ogLocale)
     }
 
-    const ogUrl = document.querySelector('meta[property="og:url"]') || document.createElement('meta')
-    ogUrl.setAttribute('property', 'og:url')
-    ogUrl.setAttribute('content', canonicalUrl)
-    if (!document.head.contains(ogUrl)) {
-        document.head.appendChild(ogUrl)
+    const ogLocaleAlternate = document.querySelector('meta[property="og:locale:alternate"]') || document.createElement('meta')
+    ogLocaleAlternate.setAttribute('property', 'og:locale:alternate')
+    ogLocaleAlternate.setAttribute('content', currentSeo.value.locale === 'es_ES' ? 'en_US' : 'es_ES')
+    if (!document.head.contains(ogLocaleAlternate)) {
+        document.head.appendChild(ogLocaleAlternate)
+    }
+
+    if (!isNotFound) {
+        const ogUrl = document.querySelector('meta[property="og:url"]') || document.createElement('meta')
+        ogUrl.setAttribute('property', 'og:url')
+        ogUrl.setAttribute('content', canonicalUrl)
+        if (!document.head.contains(ogUrl)) {
+            document.head.appendChild(ogUrl)
+        }
     }
 
     const twitterTitle = document.querySelector('meta[name="twitter:title"]') || document.createElement('meta')
@@ -204,6 +241,37 @@ function updateSeo() {
         document.head.appendChild(twitterDescription)
     }
 
+    const socialImage = `${siteUrl}/og-image.png`
+    const ogImage = document.querySelector('meta[property="og:image"]') || document.createElement('meta')
+    ogImage.setAttribute('property', 'og:image')
+    ogImage.setAttribute('content', socialImage)
+    if (!document.head.contains(ogImage)) {
+        document.head.appendChild(ogImage)
+    }
+
+    const twitterImage = document.querySelector('meta[name="twitter:image"]') || document.createElement('meta')
+    twitterImage.setAttribute('name', 'twitter:image')
+    twitterImage.setAttribute('content', socialImage)
+    if (!document.head.contains(twitterImage)) {
+        document.head.appendChild(twitterImage)
+    }
+
+    const twitterCard = document.querySelector('meta[name="twitter:card"]') || document.createElement('meta')
+    twitterCard.setAttribute('name', 'twitter:card')
+    twitterCard.setAttribute('content', 'summary_large_image')
+    if (!document.head.contains(twitterCard)) {
+        document.head.appendChild(twitterCard)
+    }
+
+    if (!isNotFound) {
+        const twitterUrl = document.querySelector('meta[name="twitter:url"]') || document.createElement('meta')
+        twitterUrl.setAttribute('name', 'twitter:url')
+        twitterUrl.setAttribute('content', canonicalUrl)
+        if (!document.head.contains(twitterUrl)) {
+            document.head.appendChild(twitterUrl)
+        }
+    }
+
     const schemaScript = (document.getElementById('seo-ld-json') as HTMLScriptElement | null) ?? document.createElement('script')
     schemaScript.id = 'seo-ld-json'
     schemaScript.type = 'application/ld+json'
@@ -213,7 +281,18 @@ function updateSeo() {
     }
 }
 
-onMounted(() => {
+onMounted(async () => {
+    await router.isReady()
+
+    if (locale.value === 'en_EN' && route.query.lang !== 'en') {
+        void router.replace({
+            path: route.path,
+            query: { ...route.query, lang: 'en' },
+            hash: route.hash,
+        })
+        return
+    }
+
     updateSeo()
 })
 

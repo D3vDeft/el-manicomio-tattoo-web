@@ -79,7 +79,7 @@
             </section>
             <section>
                 <h3 class="text-3xl mt-5">{{ $t('privacy-policy.point-9.title') }}</h3>
-                <p>wordpress@elmanicomiotattoo.com</p>
+                <p>elmanicomiotattoo@gmail.com</p>
             </section>
         </div>
     </div>

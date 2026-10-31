@@ -1,0 +1,112 @@
+{
+  "/": {
+    "es_ES": {
+      "title": "Estudio de tatuajes en Madrid | El Manicomio Tattoo",
+      "description": "Estudio de tatuajes en Madrid, Chamberí. Tatuajes personalizados, blackwork, realismo, lettering, piercing y body art para clientes en Madrid."
+    },
+    "en_EN": {
+      "title": "Tattoo Studio in Madrid | El Manicomio Tattoo",
+      "description": "Custom tattoos, piercings and body art in Madrid. Visit El Manicomio Tattoo in the Chamberí neighbourhood."
+    }
+  },
+  "/tattoos": {
+    "es_ES": {
+      "title": "Tatuajes personalizados en Madrid | El Manicomio Tattoo",
+      "description": "Tatuajes personalizados en Madrid: blackwork, realismo, lettering, minimalista y diseño exclusivo en el estudio El Manicomio Tattoo."
+    },
+    "en_EN": {
+      "title": "Custom Tattoos in Madrid | El Manicomio Tattoo",
+      "description": "Explore custom tattoo designs in Madrid, including blackwork, realism, lettering and minimalist styles."
+    }
+  },
+  "/piercings": {
+    "es_ES": {
+      "title": "Piercings en Madrid | El Manicomio Tattoo",
+      "description": "Piercings en Madrid con atención profesional, materiales seguros y asesoramiento para elegir el mejor piercing para ti."
+    },
+    "en_EN": {
+      "title": "Professional Piercings in Madrid | El Manicomio Tattoo",
+      "description": "Professional piercings in Madrid, with safe materials and personal guidance at El Manicomio Tattoo."
+    }
+  },
+  "/tooth-gems": {
+    "es_ES": {
+      "title": "Tooth gems en Madrid | El Manicomio Tattoo",
+      "description": "Tooth gems en Madrid con acabados seguros y personalizados para darle un toque único a tu estilo."
+    },
+    "en_EN": {
+      "title": "Tooth Gems in Madrid | El Manicomio Tattoo",
+      "description": "Personalized tooth gems in Madrid at El Manicomio Tattoo."
+    }
+  },
+  "/jewelers": {
+    "es_ES": {
+      "title": "Joyería y accesorios | El Manicomio Tattoo",
+      "description": "Descubre joyería premium y accesorios para complementar tu estilo con piezas elegantes y de alta calidad."
+    },
+    "en_EN": {
+      "title": "Jewellery and Accessories | El Manicomio Tattoo",
+      "description": "Discover jewellery and accessories selected by El Manicomio Tattoo in Madrid."
+    }
+  },
+  "/self-care": {
+    "es_ES": {
+      "title": "Self care y cuidado personal | El Manicomio Tattoo",
+      "description": "Cuidado personal y self care para tu piel y tu proceso de estilo, con recomendaciones y productos pensados para ti."
+    },
+    "en_EN": {
+      "title": "Self-Care and Aftercare | El Manicomio Tattoo",
+      "description": "Personal care and tattoo aftercare advice from El Manicomio Tattoo in Madrid."
+    }
+  },
+  "/contact": {
+    "es_ES": {
+      "title": "Contacta con El Manicomio Tattoo | Madrid",
+      "description": "Pide tu cita con El Manicomio Tattoo en Madrid. Contacta con nosotros para tatuajes personalizados, piercings y más."
+    },
+    "en_EN": {
+      "title": "Contact El Manicomio Tattoo | Madrid",
+      "description": "Contact El Manicomio Tattoo in Madrid to book a tattoo or piercing appointment."
+    }
+  },
+  "/promo": {
+    "es_ES": {
+      "title": "Promociones y ofertas de tatuajes en Madrid",
+      "description": "Consulta promociones y ofertas del estudio de tatuajes El Manicomio Tattoo en Madrid y reserva tu cita."
+    },
+    "en_EN": {
+      "title": "Tattoo Promotions in Madrid | El Manicomio Tattoo",
+      "description": "Discover current promotions at El Manicomio Tattoo in Madrid."
+    }
+  },
+  "/cookie-policy": {
+    "es_ES": {
+      "title": "Política de cookies | El Manicomio Tattoo",
+      "description": "Información sobre el uso de cookies y tecnologías relacionadas en la web de El Manicomio Tattoo."
+    },
+    "en_EN": {
+      "title": "Cookie Policy | El Manicomio Tattoo",
+      "description": "Learn how El Manicomio Tattoo uses cookies on this website."
+    }
+  },
+  "/privacy-policy": {
+    "es_ES": {
+      "title": "Política de privacidad | El Manicomio Tattoo",
+      "description": "Consulta la política de privacidad de El Manicomio Tattoo y cómo tratamos tus datos personales."
+    },
+    "en_EN": {
+      "title": "Privacy Policy | El Manicomio Tattoo",
+      "description": "Read the privacy policy of El Manicomio Tattoo."
+    }
+  },
+  "/legal-notice": {
+    "es_ES": {
+      "title": "Aviso legal | El Manicomio Tattoo",
+      "description": "Aviso legal y condiciones de uso de la web de El Manicomio Tattoo."
+    },
+    "en_EN": {
+      "title": "Legal Notice | El Manicomio Tattoo",
+      "description": "Read the legal notice and terms of use for El Manicomio Tattoo."
+    }
+  }
+}

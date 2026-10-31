@@ -63,7 +63,7 @@
                     {{ $t('footer.contact') }}
                 </h3>
 
-                <a href="mailto:contacto@elminicomiotattoo.com"
+                <a href="mailto:elmanicomiotattoo@gmail.com"
                     class="flex items-center gap-2 text-gray-200 lg:hover:text-blue-400 transition-colors">
                     <Mail :size="20" />
                     <span>Email</span>

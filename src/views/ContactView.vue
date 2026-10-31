@@ -10,7 +10,7 @@
                 <div>
                     <h2 class="text-3xl md:text-4xl mb-4 text-white">{{ $t('contact.location-heading') }}</h2>
                     <p class="text-white/75 leading-7 mb-6">{{ $t('contact.location-text') }}</p>
-                    <p class="text-xl text-white font-semibold">{{ $t('contact.location-address') }}</p>
+                    <address class="text-xl text-white font-semibold not-italic">{{ $t('contact.location-address') }}</address>
                 </div>
                 <div>
                     <h2 class="text-3xl md:text-4xl mb-4 text-white">{{ $t('contact.hours-heading') }}</h2>

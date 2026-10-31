@@ -9,6 +9,20 @@ const i18n = createI18n({
 });
 
 function detectLanguage(): 'es_ES' | 'en_EN' {
+  const requestedLanguage = new URLSearchParams(window.location.search).get('lang');
+  if (requestedLanguage === 'en') {
+    return 'en_EN';
+  }
+
+  try {
+    const savedLanguage = localStorage.getItem('user-locale');
+    if (savedLanguage === 'es_ES' || savedLanguage === 'en_EN') {
+      return savedLanguage;
+    }
+  } catch (error) {
+    console.error('No se pudo leer el idioma guardado.', error);
+  }
+
   const languages = navigator.languages?.length ? navigator.languages : [navigator.language];
 
   for (const language of languages) {

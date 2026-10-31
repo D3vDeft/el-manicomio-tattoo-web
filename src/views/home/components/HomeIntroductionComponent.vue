@@ -12,8 +12,7 @@
                     {{ $t('home.hero.title') }}
                 </h1>
 
-                <!-- TEXTO OCULTO PARA EL SEO -->
-                <div class="hidden max-w-3xl mx-auto space-y-6 text-white text-xl leading-8 drop-shadow-md">
+                <div class="max-w-3xl mx-auto space-y-6 text-white text-lg md:text-xl leading-8 drop-shadow-md">
                     <p>{{ $t('home.hero.paragraph-1') }}</p>
                     <p>{{ $t('home.hero.paragraph-2') }}</p>
                     <p>{{ $t('home.hero.paragraph-3') }}</p>

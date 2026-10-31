@@ -10,6 +10,7 @@
       class="absolute inset-0 w-full h-full object-cover"
       @playing="showPlaybackButton = false"
       @error="handleVideoError"
+      @canplay="playVideo"
     >
       <source :src="backgroundVideo" type="video/mp4" />
     </video>
@@ -44,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
+import { onBeforeUnmount, onMounted, ref } from 'vue';
 import { Play } from '@lucide/vue';
 import backgroundVideo from '@/assets/video-fondo/vidFondo.mp4';
 
@@ -79,5 +80,27 @@ function handleVideoError() {
   });
 }
 
-onMounted(playVideo);
+function handleVisibilityChange() {
+  if (document.visibilityState === 'visible' && heroVideo.value?.paused) {
+    playVideo();
+  }
+}
+
+onMounted(() => {
+  const video = heroVideo.value;
+  if (video) {
+    video.autoplay = true;
+    video.defaultMuted = true;
+    video.muted = true;
+    video.loop = true;
+    video.playsInline = true;
+  }
+
+  document.addEventListener('visibilitychange', handleVisibilityChange);
+  playVideo();
+});
+
+onBeforeUnmount(() => {
+  document.removeEventListener('visibilitychange', handleVisibilityChange);
+});
 </script>

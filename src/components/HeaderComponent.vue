@@ -176,9 +176,12 @@ import {
 
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute, useRouter } from 'vue-router'
 
 
 const { locale } = useI18n()
+const route = useRoute()
+const router = useRouter()
 
 const menuOpen = ref(false)
 
@@ -191,7 +194,20 @@ const changeLanguage = (): void => {
 
     locale.value = newLanguage
 
-    localStorage.setItem('user-locale', newLanguage)
+    try {
+        localStorage.setItem('user-locale', newLanguage)
+    } catch (error) {
+        console.error('No se pudo guardar el idioma seleccionado.', error)
+    }
+
+    router.replace({
+        path: route.path,
+        query: {
+            ...route.query,
+            lang: newLanguage === 'en_EN' ? 'en' : undefined,
+        },
+        hash: route.hash,
+    })
 }
 
 </script>
