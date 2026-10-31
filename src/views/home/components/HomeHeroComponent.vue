@@ -1,7 +1,7 @@
 <template>
     <section class="relative w-full h-[calc(100vh-140px)] overflow-hidden">
         <video autoplay muted loop playsinline preload="metadata" class="absolute inset-0 w-full h-full object-cover">
-            <source src="https://elmanicomiotattoo.es/wp-content/uploads/2025/07/vidFondo-1.mp4" type="video/mp4">
+            <source :src="backgroundVideo" type="video/mp4">
         </video>
 
         <div class="absolute inset-0 bg-linear-to-b from-black/10 via-black/20 to-black/80"></div>
@@ -17,5 +17,5 @@
 </template>
 
 <script setup lang="ts">
-
+import backgroundVideo from '@/assets/video-fondo/vidFondo.mp4';
 </script>

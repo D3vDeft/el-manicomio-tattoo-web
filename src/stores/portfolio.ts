@@ -1,31 +1,35 @@
 import { defineStore } from 'pinia';
+import { tattooImages } from '@/services/tattooMedia';
 
 export interface PortfolioImage {
   src: string;
   alt: string;
 }
 
+function getRandomPortfolioImages(): PortfolioImage[] {
+  const candidates = [...tattooImages];
+  const count = Math.min(5, candidates.length);
+
+  for (let index = 0; index < count; index += 1) {
+    const randomIndex = index + Math.floor(Math.random() * (candidates.length - index));
+    const currentImage = candidates[index];
+    const randomImage = candidates[randomIndex];
+
+    if (!currentImage || !randomImage) continue;
+
+    candidates[index] = randomImage;
+    candidates[randomIndex] = currentImage;
+  }
+
+  return candidates.slice(0, count).map((image) => ({
+    ...image,
+    alt: image.alt || 'Tatuaje realizado en El Manicomio Tattoo Madrid',
+  }));
+}
+
 export const usePortfolioStore = defineStore('portfolio', {
   state: () => ({
-    images: [
-      {
-        src: 'https://elmanicomiotattoo.es/wp-content/uploads/2025/04/01T2.webp',
-        alt: 'Tatuaje realizado en El Manicomio Tattoo Madrid',
-      },
-      {
-        src: 'https://elmanicomiotattoo.es/wp-content/uploads/2024/07/Blackout-5-scaled.jpg',
-        alt: 'Tatuaje personalizado realizado en Madrid',
-      },
-      {
-        src: 'https://elmanicomiotattoo.es/wp-content/uploads/2025/04/1-1-scaled.webp',
-        alt: 'Trabajo de tatuaje realizado en Madrid',
-      },
-      {
-        src: 'https://elmanicomiotattoo.es/wp-content/uploads/2024/07/Color-3.jpg',
-        alt: 'Tatuaje artístico realizado por El Manicomio Tattoo',
-      },
-    ] as PortfolioImage[],
-
+    images: getRandomPortfolioImages(),
     selectedImage: null as number | null,
   }),
 

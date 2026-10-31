@@ -1,22 +1,26 @@
 <template>
-  <section class="relative py-24 md:py-32" aria-labelledby="tattoo-gallery-title">
-    <div class="max-w-7xl mx-auto px-6">
-      <p class="uppercase tracking-[0.35em] text-xl text-white/60 mb-4">
+  <section class="gallery-wall relative py-16 sm:py-20 md:py-28" aria-labelledby="tattoo-gallery-title">
+    <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6">
+      <p class="mb-3 text-xs uppercase tracking-[0.3em] text-[#c8b58c] sm:text-sm sm:tracking-[0.35em]">
         {{ $t('home.portfolio.section-name') }}
       </p>
-      <h2 id="tattoo-gallery-title" class="font-display text-5xl md:text-7xl text-white">
+      <h2 id="tattoo-gallery-title" class="font-display text-5xl text-white sm:text-6xl md:text-7xl">
         {{ $t('tattoos.gallery.title') }}
       </h2>
-      <p class="text-white/70 max-w-xl mt-5 leading-7 text-xl md:text-2xl">
+      <p class="mt-4 max-w-xl text-base leading-7 text-white/75 sm:text-lg md:text-xl">
         {{ $t('tattoos.gallery.description') }}
       </p>
 
-      <div v-if="media.length" class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div
+        v-if="media.length"
+        class="mt-10 grid grid-cols-2 items-center gap-x-5 gap-y-9 sm:mt-14 sm:gap-x-8 sm:gap-y-12 md:grid-cols-3 xl:grid-cols-4"
+      >
         <button
           v-for="(item, index) in media"
           :key="item.src"
           type="button"
-          class="group relative mx-auto block h-105 w-62.5 overflow-hidden bg-white/5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white md:h-120 md:w-75 lg:w-85"
+          class="artwork-frame group relative mx-auto block w-full overflow-hidden text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+          :class="frameVariants[index % frameVariants.length]"
           :aria-label="$t('tattoos.gallery.open-media', { number: index + 1 })"
           @click="openImage(index)"
         >
@@ -24,25 +28,21 @@
             v-if="item.type === 'image'"
             :src="item.src"
             :alt="item.alt || $t('tattoos.gallery.image-alt')"
-            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+            class="artwork-image"
             loading="lazy"
           />
           <video
             v-else
             :src="item.src"
             :aria-label="item.alt || $t('tattoos.gallery.video-alt')"
-            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+            class="artwork-image"
             muted
             playsinline
             preload="metadata"
           />
           <span
-            class="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/10"
-            aria-hidden="true"
-          />
-          <span
             v-if="item.type === 'video'"
-            class="pointer-events-none absolute bottom-4 right-4 flex items-center justify-center rounded-full bg-black/50 p-3 text-white"
+            class="pointer-events-none absolute bottom-4 right-4 z-10 flex items-center justify-center rounded-full bg-black/65 p-3 text-white shadow-lg"
             aria-hidden="true"
           >
             <Play :size="20" :stroke-width="1.5" />
@@ -52,6 +52,7 @@
       <p v-else class="py-16 text-center text-white/70">
         {{ $t('tattoos.gallery.empty') }}
       </p>
+
     </div>
 
     <Teleport to="body">
@@ -116,6 +117,16 @@ import { Play } from '@lucide/vue';
 import { tattooMedia } from '@/services/tattooMedia';
 
 const media = tattooMedia;
+const frameVariants = [
+  'frame--gilt frame--portrait',
+  'frame--walnut frame--landscape',
+  'frame--dark frame--large frame--wide',
+  'frame--ivory frame--oval',
+  'frame--walnut frame--large frame--tall',
+  'frame--gilt frame--square',
+  'frame--dark frame--portrait',
+  'frame--ivory frame--large frame--wide',
+];
 const selectedIndex = ref<number | null>(null);
 const selectedImage = computed(() =>
   selectedIndex.value === null ? null : (media[selectedIndex.value] ?? null),
@@ -165,6 +176,138 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+.gallery-wall {
+  isolation: isolate;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgb(118 83 49 / 18%), transparent 58%),
+    linear-gradient(115deg, #171310 0%, #211a15 48%, #15120f 100%);
+}
+
+.gallery-wall::before,
+.gallery-wall::after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgb(190 158 104 / 45%), transparent);
+  content: '';
+}
+
+.gallery-wall::before {
+  top: 0;
+}
+
+.gallery-wall::after {
+  bottom: 0;
+}
+
+.artwork-frame {
+  aspect-ratio: 4 / 5;
+  --frame-thickness: 6px;
+  border: var(--frame-thickness) solid transparent;
+  border-radius: var(--frame-radius, 3px);
+  background: var(--frame-gradient) border-box;
+  box-shadow:
+    0 2px 0 rgb(255 255 255 / 35%) inset,
+    0 -3px 0 rgb(0 0 0 / 45%) inset,
+    0 10px 20px rgb(0 0 0 / 50%),
+    0 24px 32px rgb(0 0 0 / 24%);
+  transform: rotate(var(--frame-tilt));
+  transition:
+    transform 300ms ease,
+    box-shadow 300ms ease;
+}
+
+.artwork-frame::before {
+  position: absolute;
+  inset: 2px;
+  z-index: 1;
+  border: 1px solid var(--frame-detail);
+  border-radius: calc(var(--frame-radius, 3px) - 2px);
+  content: '';
+  pointer-events: none;
+}
+
+.artwork-frame:hover,
+.artwork-frame:focus-visible {
+  z-index: 2;
+  box-shadow: 0 18px 30px rgb(0 0 0 / 60%), 0 34px 42px rgb(0 0 0 / 28%);
+  transform: rotate(0) scale(1.025);
+}
+
+.frame--gilt {
+  --frame-gradient: linear-gradient(135deg, #efd39a, #9b713a 22%, #d7b574 44%, #795529 72%, #c5a064);
+  --frame-detail: rgb(255 235 186 / 65%);
+  --frame-tilt: -1deg;
+}
+
+.frame--walnut {
+  --frame-gradient: linear-gradient(135deg, #81563b, #382319 28%, #70462d 58%, #2b1b14);
+  --frame-detail: rgb(216 171 122 / 60%);
+  --frame-tilt: 1deg;
+}
+
+.frame--ivory {
+  --frame-gradient: linear-gradient(135deg, #f1e4c5, #bba67c 28%, #e8d8b2 55%, #a28a62);
+  --frame-detail: rgb(255 248 225 / 80%);
+  --frame-tilt: -0.65deg;
+}
+
+.frame--dark {
+  --frame-gradient: linear-gradient(135deg, #72614a, #241f1a 26%, #504331 58%, #171411);
+  --frame-detail: rgb(196 165 111 / 75%);
+  --frame-tilt: 0.8deg;
+}
+
+.artwork-image {
+  position: absolute;
+  inset: var(--frame-thickness);
+  width: calc(100% - var(--frame-thickness) - var(--frame-thickness));
+  height: calc(100% - var(--frame-thickness) - var(--frame-thickness));
+  border-radius: var(--photo-radius, 1px);
+  object-fit: cover;
+  object-position: center;
+}
+
+.frame--portrait {
+  aspect-ratio: 4 / 5;
+}
+
+.frame--landscape {
+  aspect-ratio: 5 / 4;
+  --frame-tilt: 0.7deg;
+}
+
+.frame--square {
+  aspect-ratio: 1;
+}
+
+.frame--oval {
+  --frame-radius: 50%;
+  --photo-radius: 50%;
+}
+
+@media (max-width: 639px) {
+  .frame--oval {
+    grid-column: span 2;
+    justify-self: center;
+    width: min(100%, 220px);
+  }
+}
+
+.frame--large {
+  grid-column: span 2;
+  width: 100%;
+}
+
+.frame--wide {
+  aspect-ratio: 3 / 2;
+}
+
+.frame--tall {
+  aspect-ratio: 5 / 6;
+}
+
 .viewer-button {
   border: 1px solid rgb(255 255 255 / 35%);
   background: rgb(0 0 0 / 45%);
@@ -176,6 +319,18 @@ onUnmounted(() => {
 .viewer-button:focus-visible {
   outline: 2px solid white;
   outline-offset: 4px;
+}
+
+@media (min-width: 640px) {
+  .artwork-frame {
+    --frame-thickness: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .artwork-frame {
+    transition: none;
+  }
 }
 
 </style>
