@@ -10,6 +10,11 @@
             </h2>
 
             <div class="flex flex-col items-center">
+                <div class="flex items-center gap-5" aria-label="Valoración: 4,9 de 5 estrellas">
+                    <span class="font-display text-7xl text-white">4.9</span>
+                    <div class="text-yellow-400 text-2xl tracking-widest" aria-hidden="true">★★★★★</div>
+                </div>
+
                 <p class="text-white/70 text-xl mt-4 mb-8">
                     {{ $t('home.reviews.description') }}
                 </p>
